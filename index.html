@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="AI workflow guides, templates and freelance writing services for professionals. Practical tools that save hours every week.">
+<title>Shane Zeller — AI Workflow Guides & Freelance Services</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0e1a;--bg2:#111827;--bg3:#1a2236;
+  --blue:#38bdf8;--green:#34d399;--purple:#a78bfa;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1e2d40;
+  --max:1100px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:16px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--blue)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:var(--blue);color:#0a0e1a!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.nav-cta:hover{background:#7dd3fc!important;color:#0a0e1a!important}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;padding:80px 24px 60px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:
+  radial-gradient(ellipse 800px 600px at 80% 20%,rgba(56,189,248,.07) 0%,transparent 70%),
+  radial-gradient(ellipse 500px 400px at 10% 80%,rgba(52,211,153,.05) 0%,transparent 60%)}
+.grid-bg{position:absolute;inset:0;background-image:
+  linear-gradient(rgba(56,189,248,.03) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(56,189,248,.03) 1px,transparent 1px);
+  background-size:64px 64px}
+.hero-inner{max-width:var(--max);margin:0 auto;width:100%;position:relative}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);border-radius:99px;padding:6px 16px;font-size:.8rem;font-weight:600;color:var(--green);letter-spacing:.06em;text-transform:uppercase;margin-bottom:28px}
+.hero-badge::before{content:'';width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 8px var(--green)}
+h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;margin-bottom:20px}
+h1 .accent{background:linear-gradient(135deg,var(--blue),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:1.15rem;color:var(--muted);max-width:560px;margin-bottom:36px;line-height:1.7}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:10px;font-weight:600;font-size:.95rem;text-decoration:none;transition:all .2s}
+.btn-primary{background:var(--blue);color:#0a0e1a}
+.btn-primary:hover{background:#7dd3fc;transform:translateY(-1px)}
+.btn-outline{border:1px solid var(--border);color:var(--text)}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.hero-stats{display:flex;gap:36px;margin-top:52px;padding-top:32px;border-top:1px solid var(--border)}
+.stat-val{font-size:1.8rem;font-weight:800;color:var(--text)}
+.stat-val span{color:var(--blue)}
+.stat-lbl{font-size:.8rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+
+/* SECTIONS */
+section{padding:80px 24px}
+.section-inner{max-width:var(--max);margin:0 auto}
+.section-tag{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);margin-bottom:10px}
+.section-title{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:12px;letter-spacing:-.01em}
+.section-sub{font-size:1rem;color:var(--muted);max-width:520px;margin-bottom:48px}
+
+/* PRODUCTS */
+.products-bg{background:var(--bg2)}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.product-card{background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:24px;transition:border-color .2s,transform .2s;text-decoration:none;color:inherit;display:flex;flex-direction:column}
+.product-card:hover{border-color:var(--blue);transform:translateY(-2px)}
+.product-tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);background:rgba(56,189,248,.1);border-radius:6px;padding:3px 10px;margin-bottom:14px}
+.product-card h3{font-size:1.05rem;font-weight:700;margin-bottom:8px;line-height:1.3}
+.product-card p{font-size:.875rem;color:var(--muted);flex:1;margin-bottom:16px;line-height:1.6}
+.product-footer{display:flex;align-items:center;justify-content:space-between}
+.product-price{font-size:1.2rem;font-weight:800;color:var(--text)}
+.product-price .sym{font-size:.8rem;color:var(--blue);font-weight:600}
+.product-btn{font-size:.8rem;font-weight:600;color:var(--blue);text-decoration:none;background:rgba(56,189,248,.1);padding:6px 14px;border-radius:7px;transition:background .2s}
+.product-btn:hover{background:rgba(56,189,248,.2)}
+.coming-soon{opacity:.5;pointer-events:none}
+.product-tag.cs{color:var(--dim);background:rgba(71,85,105,.15)}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.service-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:22px}
+.service-icon{width:42px;height:42px;border-radius:10px;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:14px}
+.service-card h3{font-size:.95rem;font-weight:700;margin-bottom:6px}
+.service-card p{font-size:.85rem;color:var(--muted);line-height:1.6}
+.upwork-btn{display:inline-flex;align-items:center;gap:8px;margin-top:28px;background:#14a800;color:#fff;padding:12px 24px;border-radius:10px;font-weight:600;font-size:.9rem;text-decoration:none;transition:background .2s}
+.upwork-btn:hover{background:#11900;}
+
+/* WHY */
+.why-bg{background:var(--bg2)}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
+.why-card{padding:20px;border-radius:10px;border:1px solid var(--border)}
+.why-num{font-size:2rem;font-weight:900;color:var(--blue);opacity:.3;line-height:1;margin-bottom:8px}
+.why-card h4{font-size:.9rem;font-weight:700;margin-bottom:6px}
+.why-card p{font-size:.82rem;color:var(--muted);line-height:1.6}
+
+/* BLOG */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.blog-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px;text-decoration:none;color:inherit;transition:border-color .2s}
+.blog-card:hover{border-color:var(--blue)}
+.blog-cat{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green);margin-bottom:10px}
+.blog-card h3{font-size:.95rem;font-weight:700;margin-bottom:8px;line-height:1.4}
+.blog-card p{font-size:.82rem;color:var(--muted);line-height:1.6}
+.blog-coming{opacity:.45;cursor:default}
+
+/* CONTACT */
+.contact-bg{background:var(--bg2)}
+.contact-box{background:var(--bg3);border:1px solid var(--border);border-radius:16px;padding:48px;text-align:center;max-width:560px;margin:0 auto}
+.contact-box h2{font-size:1.7rem;font-weight:800;margin-bottom:10px}
+.contact-box p{color:var(--muted);margin-bottom:28px}
+.contact-email{display:inline-flex;align-items:center;gap:10px;color:var(--blue);font-size:1rem;font-weight:600;text-decoration:none;border:1px solid rgba(56,189,248,.25);padding:12px 24px;border-radius:10px;transition:background .2s}
+.contact-email:hover{background:rgba(56,189,248,.08)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:28px 24px;text-align:center}
+.footer-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:gap;gap:12px}
+.footer-links{display:flex;gap:20px;list-style:none}
+.footer-links a{color:var(--dim);text-decoration:none;font-size:.85rem;transition:color .2s}
+.footer-links a:hover{color:var(--blue)}
+.footer-copy{font-size:.82rem;color:var(--dim)}
+
+@media(max-width:640px){
+  .nav-links{display:none}
+  .hero-stats{flex-wrap:wrap;gap:20px}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">sz<span>.</span>dev</a>
+    <ul class="nav-links">
+      <li><a href="#products">Guides</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://gumroad.com/szeller" class="nav-cta" target="_blank">Shop →</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="grid-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">AI Workflow Specialist</div>
+    <h1>Practical AI tools<br>for <span class="accent">professionals</span><br>who hate busywork</h1>
+    <p class="hero-sub">Step-by-step guides, copy-paste prompt libraries, and freelance writing services — built for real workflows, not demos.</p>
+    <div class="hero-btns">
+      <a href="#products" class="btn btn-primary">Browse guides →</a>
+      <a href="#services" class="btn btn-outline">Hire me on Upwork</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-val"><span>30</span>+</div>
+        <div class="stat-lbl">Prompts per guide</div>
+      </div>
+      <div>
+        <div class="stat-val"><span>5</span>hrs</div>
+        <div class="stat-lbl">Avg. weekly time saved</div>
+      </div>
+      <div>
+        <div class="stat-val"><span>$29</span></div>
+        <div class="stat-lbl">One-time, no subscription</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-bg" id="products">
+  <div class="section-inner">
+    <div class="section-tag">Guides &amp; Templates</div>
+    <h2 class="section-title">AI workflow guides for specific industries</h2>
+    <p class="section-sub">Each guide is written for one job role — not generic AI advice. 30 fully tested prompts, copy-paste ready.</p>
+    <div class="products-grid">
+
+      <a href="https://szeller.gumroad.com/l/dental-ai-guide" target="_blank" class="product-card">
+        <span class="product-tag">Healthcare</span>
+        <h3>AI for Dental Office Managers</h3>
+        <p>30 copy-paste prompts for scheduling, insurance pre-auth, patient recalls, HIPAA-safe reviews, billing appeals, and staff ops. Works with Dentrix, Eaglesoft &amp; Curve Dental.</p>
+        <div class="product-footer">
+          <div class="product-price"><span class="sym">$</span>29</div>
+          <span class="product-btn">Get it →</span>
+        </div>
+      </a>
+
+      <div class="product-card coming-soon">
+        <span class="product-tag cs">Coming soon</span>
+        <h3>AI for Property Managers</h3>
+        <p>Lease renewals, maintenance requests, tenant communication, and owner reporting — all with AI prompt templates.</p>
+        <div class="product-footer">
+          <div class="product-price" style="color:var(--dim)">$29</div>
+          <span class="product-btn">Soon</span>
+        </div>
+      </div>
+
+      <div class="product-card coming-soon">
+        <span class="product-tag cs">Coming soon</span>
+        <h3>AI for HR Coordinators</h3>
+        <p>Job postings, interview scheduling, onboarding docs, performance review templates, and policy communications.</p>
+        <div class="product-footer">
+          <div class="product-price" style="color:var(--dim)">$29</div>
+          <span class="product-btn">Soon</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="section-tag">Freelance Services</div>
+    <h2 class="section-title">Need something written? I can help.</h2>
+    <p class="section-sub">AI-assisted content that sounds human. Fast turnaround, professional output.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">✍️</div>
+        <h3>Blog &amp; Article Writing</h3>
+        <p>SEO-optimised long-form content for SaaS, healthcare, finance, and professional services.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📧</div>
+        <h3>Email Sequences</h3>
+        <p>Onboarding flows, nurture campaigns, and re-engagement sequences that convert.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📋</div>
+        <h3>SOPs &amp; Documentation</h3>
+        <p>Standard operating procedures, process docs, and training materials for growing teams.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3>AI Prompt Engineering</h3>
+        <p>Custom prompt libraries and AI workflow design for your specific tools and use cases.</p>
+      </div>
+    </div>
+    <a href="https://www.upwork.com/freelancers/~01e2b86269fcfda47d" target="_blank" class="upwork-btn">
+      View profile on Upwork →
+    </a>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-bg">
+  <div class="section-inner">
+    <div class="section-tag">Why these guides</div>
+    <h2 class="section-title">Built differently from generic AI content</h2>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-num">01</div><h4>Industry-specific</h4><p>Written for one job role. Every prompt uses terminology your industry actually uses.</p></div>
+      <div class="why-card"><div class="why-num">02</div><h4>Fully written out</h4><p>Not just described — every prompt is complete and ready to paste. No extra work.</p></div>
+      <div class="why-card"><div class="why-num">03</div><h4>HIPAA / compliance aware</h4><p>Healthcare guides flag compliance considerations. No surprises from generic templates.</p></div>
+      <div class="why-card"><div class="why-num">04</div><h4>One-time purchase</h4><p>No subscription. No upsells. Pay once, use forever, get all future updates free.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="section-inner">
+    <div class="section-tag">Blog</div>
+    <h2 class="section-title">Practical AI for real jobs</h2>
+    <p class="section-sub">No hype. No "10x your productivity" nonsense. Just tested workflows.</p>
+    <div class="blog-grid">
+      <div class="blog-card blog-coming">
+        <div class="blog-cat">Healthcare</div>
+        <h3>How to write a HIPAA-compliant Google review response in under 3 minutes</h3>
+        <p>The exact prompt structure that keeps your practice legally protected while still sounding human.</p>
+      </div>
+      <div class="blog-card blog-coming">
+        <div class="blog-cat">Productivity</div>
+        <h3>The 5 AI prompts every office manager should have saved</h3>
+        <p>Across any industry, these five prompts eliminate the most time-consuming writing tasks.</p>
+      </div>
+      <div class="blog-card blog-coming">
+        <div class="blog-cat">Insurance</div>
+        <h3>Writing dental insurance appeals that actually get approved</h3>
+        <p>What claims reviewers look for — and how to structure your appeal letter around it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-bg" id="contact">
+  <div class="section-inner">
+    <div class="contact-box">
+      <h2>Get in touch</h2>
+      <p>Questions about a guide, custom work, or bulk licensing for your team?</p>
+      <a href="mailto:szeller@blackberg.com" class="contact-email">
+        szeller@blackberg.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 Shane Zeller. All rights reserved.</span>
+    <ul class="footer-links">
+      <li><a href="https://gumroad.com/szeller" target="_blank">Gumroad</a></li>
+      <li><a href="https://www.upwork.com/freelancers/~01e2b86269fcfda47d" target="_blank">Upwork</a></li>
+      <li><a href="https://github.com/sz3ll3r" target="_blank">GitHub</a></li>
+      <li><a href="mailto:szeller@blackberg.com">Email</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

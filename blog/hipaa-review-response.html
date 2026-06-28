@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="The exact prompt structure that keeps your dental practice legally protected while still sounding human when responding to Google reviews.">
+<title>How to Write a HIPAA-Compliant Google Review Response in Under 3 Minutes | sz.dev</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0e1a;--bg2:#111827;--bg3:#1a2236;
+  --blue:#38bdf8;--green:#34d399;--purple:#a78bfa;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1e2d40;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--blue)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:var(--blue);color:#0a0e1a!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--blue)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--green);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--blue);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#0d1f33;border:1px solid rgba(56,189,248,.3);border-left:3px solid var(--blue);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--blue)}
+.prompt-box{background:#0c1a2e;border:1px solid rgba(56,189,248,.2);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#a5d8f3;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);margin-bottom:10px;display:block}
+.example-box{background:#111827;border:1px solid var(--border);border-radius:10px;padding:22px;margin:24px 0}
+.example-box .ex-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--green);margin-bottom:10px}
+.example-box p{font-size:.9rem;color:#94a3b8;margin:0;font-style:italic}
+.cta-box{background:linear-gradient(135deg,#0d1f33,#0a1628);border:1px solid rgba(56,189,248,.25);border-radius:14px;padding:32px;margin:48px 0 0;text-align:center}
+.cta-box h3{font-size:1.2rem;font-weight:700;margin-bottom:10px;color:var(--text)}
+.cta-box p{color:var(--muted);font-size:.9rem;margin-bottom:22px}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#0a0e1a;padding:12px 28px;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none;transition:background .2s}
+.cta-btn:hover{background:#7dd3fc}
+footer{border-top:1px solid var(--border);padding:28px 24px;text-align:center;color:var(--dim);font-size:.82rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-links{display:flex;gap:20px;list-style:none}
+.footer-links a{color:var(--dim);text-decoration:none;font-size:.85rem}
+.footer-links a:hover{color:var(--blue)}
+@media(max-width:640px){.nav-links{display:none}.article-meta{flex-direction:column;gap:8px}.footer-inner{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">sz<span>.</span>dev</a>
+    <ul class="nav-links">
+      <li><a href="/#products">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="https://szeller.gumroad.com/l/ihspj" class="nav-cta" target="_blank">Shop →</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>/</span><a href="/#blog">Blog</a><span>/</span>HIPAA-Compliant Review Responses
+  </div>
+
+  <div class="article-cat">Healthcare · AI Prompts</div>
+  <h1>How to Write a HIPAA-Compliant Google Review Response in Under 3 Minutes</h1>
+  <div class="article-meta">
+    <span>June 28, 2026</span>
+    <span>5 min read</span>
+    <span>Shane Zeller</span>
+  </div>
+
+  <div class="article-body">
+
+    <p>Google reviews can make or break a dental practice. But responding to them is a minefield. Confirm that a patient came in for a crown? HIPAA violation. Thank them for mentioning their tooth pain? HIPAA violation. Even saying "we're glad your visit went well" could be considered an implied confirmation of a patient relationship.</p>
+
+    <p>The result: most practices either ignore reviews entirely (terrible for SEO and trust) or write bland, robotic responses that don't actually help. Neither is the right answer.</p>
+
+    <p>Here's the prompt structure I use to write responses that are warm, professional, and legally safe — in about 3 minutes per review.</p>
+
+    <h2>The Core Problem</h2>
+
+    <p>HIPAA prohibits disclosing <strong>Protected Health Information (PHI)</strong> — and PHI includes whether someone is your patient. So your response can never confirm, deny, or imply that the person reviewing you is or was a patient at your practice.</p>
+
+    <p>This doesn't mean your response has to be cold. It means you respond as a <em>business</em>, not as a healthcare provider commenting on a specific patient relationship.</p>
+
+    <div class="callout">
+      <p><strong>The golden rule:</strong> Write as if you don't know whether this reviewer is a patient. Your response should make sense even if a stranger sent you this review. Never reference specific treatments, appointments, symptoms, or visit details — not even to deny them.</p>
+    </div>
+
+    <h2>The Prompt</h2>
+
+    <p>Copy this into ChatGPT, Claude, or any AI tool. Fill in the brackets and send.</p>
+
+    <span class="prompt-label">Copy this prompt</span>
+    <div class="prompt-box">Write a HIPAA-compliant Google review response for a dental practice. The response must NOT confirm or deny that the reviewer is a patient, must NOT reference any specific treatment, appointment, or health information, and must NOT contain any information that could constitute Protected Health Information (PHI) under HIPAA.
+
+Review text: "[PASTE THE FULL REVIEW TEXT HERE]"
+Review star rating: [1 / 2 / 3 / 4 / 5] stars
+Practice name: [YOUR PRACTICE NAME]
+Owner/manager name for sign-off: [YOUR NAME OR TITLE]
+
+Instructions:
+- For positive reviews (4-5 stars): Thank the reviewer for sharing their experience, express that your team works hard to create a welcoming environment for everyone, and invite them (or anyone they know) to reach out with questions.
+- For negative reviews (1-3 stars): Acknowledge that their experience didn't meet expectations, express genuine concern without confirming or validating specific claims, invite them to contact the office directly at [YOUR PHONE NUMBER] to discuss privately, and do NOT be defensive.
+- Keep the response under 100 words.
+- End with: "[YOUR NAME], [YOUR PRACTICE NAME]"
+- Warm and professional tone — never clinical or robotic.</div>
+
+    <h2>Examples: What Good Looks Like</h2>
+
+    <h3>Positive Review (5 stars): "Great experience, staff was friendly and Dr. Smith was gentle with my filling."</h3>
+
+    <div class="example-box">
+      <div class="ex-label">AI-generated response (compliant)</div>
+      <p>Thank you so much for taking the time to share your kind words. Creating a welcoming, comfortable environment for everyone who walks through our doors is what our team strives for every single day. It means the world to hear that it comes through. We look forward to seeing you again soon!<br><br>— Sarah, Bright Smiles Dental</p>
+    </div>
+
+    <p>Notice what's missing: no mention of fillings, Dr. Smith's name in context, or confirmation that this person visited. The response could apply to anyone — but still feels personal and warm.</p>
+
+    <h3>Negative Review (2 stars): "Waited 45 minutes past my appointment time. Not acceptable."</h3>
+
+    <div class="example-box">
+      <div class="ex-label">AI-generated response (compliant)</div>
+      <p>Thank you for sharing this feedback — we take wait times seriously and we're sorry your experience didn't reflect the standard we hold ourselves to. We'd genuinely like to hear more and make this right. Please give us a call at (555) 234-5678 and ask for the office manager. We're committed to doing better.<br><br>— Sarah, Bright Smiles Dental</p>
+    </div>
+
+    <p>This response acknowledges the complaint, expresses genuine concern, and redirects to a private channel — without confirming anything about a specific appointment or patient record.</p>
+
+    <h2>The Traps to Avoid</h2>
+
+    <p>Even with the prompt, watch for these common AI output mistakes:</p>
+
+    <ul>
+      <li><strong>Referencing the reviewer's name</strong> — even "Thanks, John!" can be an implied acknowledgment</li>
+      <li><strong>"We're glad your procedure went well"</strong> — procedure = PHI. Delete it.</li>
+      <li><strong>"We take clinical concerns seriously"</strong> — implies you treated them. Use "we take all feedback seriously" instead.</li>
+      <li><strong>Mentioning specific providers by name in connection to a care experience</strong> — "Dr. Martinez appreciates your feedback" combined with anything treatment-adjacent is risky</li>
+      <li><strong>Agreeing or disagreeing with clinical claims</strong> — "Your concern about our sterilization process has been addressed" validates that a process complaint exists for that patient</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>When in doubt:</strong> Read your draft response and ask — "Could I send this to a complete stranger and have it still make sense?" If yes, it's almost certainly safe. If the response only makes sense if the reviewer was actually your patient, revise it.</p>
+    </div>
+
+    <h2>How Many Reviews Should You Respond To?</h2>
+
+    <p>All of them, over time. Google rewards active engagement. Responding to 80%+ of your reviews (positive and negative) has documented SEO benefits for local search rankings — specifically for "dentist near me" queries that drive new patient volume.</p>
+
+    <p>The prompt above takes 2–3 minutes per review once you have it ready to paste. Set a calendar reminder to clear your review queue every Friday morning. That's 30 minutes a week for a practice with active review volume — and the return on patient trust and search ranking is significant.</p>
+
+    <h2>One More Prompt: The "Concerned Response" for Borderline Reviews</h2>
+
+    <p>For reviews that mention specific clinical complaints (pain, billing errors, treatment outcomes), you need a version that is more careful than the standard negative response:</p>
+
+    <span class="prompt-label">Use for reviews mentioning clinical or billing specifics</span>
+    <div class="prompt-box">Write a HIPAA-compliant response to a dental review that mentions a specific concern (pain, billing, treatment outcome, or clinical experience). The response must be empathetic but must NOT validate, confirm, deny, or comment on any specific clinical claim or billing information.
+
+Review text: "[PASTE REVIEW]"
+Practice name: [YOUR PRACTICE NAME]
+Direct contact: [PHONE NUMBER]
+
+Instructions:
+- Express genuine empathy for their frustration without agreeing or disagreeing with the specifics
+- Do NOT address the clinical or billing claim directly — redirect completely to a private conversation
+- Make the invitation to contact you feel sincere, not defensive
+- Under 80 words
+- Sign off with your name and practice name</div>
+
+    <hr style="border:none;border-top:1px solid #1e2d40;margin:40px 0">
+
+    <p style="color:#64748b;font-size:.9rem">This article is for informational purposes only and does not constitute legal advice. For specific HIPAA compliance questions related to your practice, consult a healthcare compliance attorney or your practice management consultant.</p>
+
+    <div class="cta-box">
+      <h3>Want 30 more AI prompts for dental office management?</h3>
+      <p>The AI for Dental Office Managers guide covers scheduling, insurance pre-auth, patient recalls, billing appeals, staff communications — all written for HIPAA-aware, real-world dental workflows.</p>
+      <a href="https://szeller.gumroad.com/l/ihspj" class="cta-btn" target="_blank">Get the guide for $29 →</a>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 Shane Zeller. All rights reserved.</span>
+    <ul class="footer-links">
+      <li><a href="https://szeller.gumroad.com/l/ihspj" target="_blank">Gumroad</a></li>
+      <li><a href="https://www.upwork.com/freelancers/~01e2b86269fcfda47d" target="_blank">Upwork</a></li>
+      <li><a href="https://github.com/sz3ll3r" target="_blank">GitHub</a></li>
+      <li><a href="mailto:szeller@blackberg.com">Email</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

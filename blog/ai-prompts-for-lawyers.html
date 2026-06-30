@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 AI Prompts Every Solo Attorney Should Use Weekly | sz3ll3r</title>
+<meta name="description" content="Five copy-paste AI prompts that handle the most time-consuming routine drafting tasks for solo and small-firm attorneys — tested with Claude and ChatGPT.">
+<meta property="og:title" content="5 AI Prompts Every Solo Attorney Should Use Weekly">
+<meta property="og:description" content="Five copy-paste AI prompts that handle the most time-consuming routine drafting tasks for solo and small-firm attorneys.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-prompts-for-lawyers.html">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: #0b0f1a;
+    color: #cbd5e1;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  a { color: #94c5f8; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .site-nav {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 22px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1e2d45;
+  }
+  .site-nav .logo { font-weight: 700; color: #f1f5f9; font-size: 1rem; }
+  .site-nav nav a { color: #64748b; margin-left: 20px; font-size: .9rem; }
+  .site-nav nav a:hover { color: #94c5f8; text-decoration: none; }
+
+  .hero {
+    max-width: 760px;
+    margin: 52px auto 0;
+    padding: 0 20px;
+  }
+  .category-pill {
+    display: inline-block;
+    background: #1e3a5f;
+    color: #93c5fd;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 99px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800;
+    color: #f1f5f9;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    letter-spacing: -.03em;
+  }
+  .hero-sub {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin-bottom: 28px;
+    max-width: 620px;
+  }
+  .meta {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    font-size: .82rem;
+    color: #475569;
+    margin-bottom: 40px;
+  }
+  .meta .divider { color: #334155; }
+
+  article {
+    max-width: 760px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+  }
+  article p { margin-bottom: 20px; color: #cbd5e1; }
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin: 44px 0 16px;
+    letter-spacing: -.02em;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    margin: 32px 0 12px;
+  }
+
+  .prompt-box {
+    background: #0f172a;
+    border: 1px solid #1e3a5f;
+    border-left: 3px solid #3b82f6;
+    border-radius: 8px;
+    padding: 20px 22px;
+    margin: 16px 0 22px;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: .875rem;
+    color: #93c5fd;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .time-saved {
+    display: inline-block;
+    background: #052e16;
+    color: #4ade80;
+    font-size: .78rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin: 8px 0 24px;
+  }
+
+  .callout {
+    background: #0f172a;
+    border: 1px solid #1e3a5f;
+    border-radius: 10px;
+    padding: 22px 26px;
+    margin: 36px 0;
+  }
+  .callout .callout-title {
+    font-weight: 700;
+    color: #93c5fd;
+    margin-bottom: 10px;
+    font-size: .95rem;
+  }
+  .callout p { color: #94a3b8; margin-bottom: 0; }
+
+  .cta-box {
+    background: linear-gradient(135deg, #0f1f38 0%, #0a1628 100%);
+    border: 1px solid #1e3a5f;
+    border-radius: 12px;
+    padding: 32px;
+    margin: 52px 0 20px;
+    text-align: center;
+  }
+  .cta-box h3 {
+    color: #f1f5f9;
+    font-size: 1.3rem;
+    margin: 0 0 12px;
+  }
+  .cta-box p {
+    color: #94a3b8;
+    max-width: 480px;
+    margin: 0 auto 22px;
+    font-size: .95rem;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #1d4ed8;
+    color: #fff;
+    font-weight: 700;
+    font-size: .95rem;
+    padding: 13px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background .2s;
+  }
+  .cta-btn:hover { background: #1e40af; text-decoration: none; }
+  .price-note {
+    display: block;
+    margin-top: 12px;
+    color: #475569;
+    font-size: .8rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 28px 20px;
+    color: #334155;
+    font-size: .82rem;
+    border-top: 1px solid #1e2d45;
+  }
+  footer a { color: #475569; }
+</style>
+</head>
+<body>
+
+<div class="site-nav">
+  <a class="logo" href="/">sz3ll3r</a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/#products">Products</a>
+    <a href="/#blog">Blog</a>
+  </nav>
+</div>
+
+<div class="hero">
+  <span class="category-pill">AI for Law</span>
+  <h1>5 AI Prompts Every Solo Attorney Should Use Weekly</h1>
+  <p class="hero-sub">These five prompts handle the most time-consuming routine drafting tasks in a small firm — tested with Claude.ai and ChatGPT, ready to paste.</p>
+  <div class="meta">
+    <span>June 29, 2026</span>
+    <span class="divider">·</span>
+    <span>8 min read</span>
+    <span class="divider">·</span>
+    <span>By Shane Zeller</span>
+  </div>
+</div>
+
+<article>
+
+<p>The promise of AI in law is not replacing attorneys — it is eliminating the mechanical drafting that consumes 30–40% of a solo practitioner's week. Engagement letters, demand letters, client status updates, contract summary memos, follow-up emails after consultations: none of this requires judgment. All of it eats time.</p>
+
+<p>These five prompts cover the highest-frequency drafting tasks in a solo or small-firm practice. Each is designed so you paste it in, fill in the bracketed fields with your case facts, and get a first draft in under two minutes. You edit, you verify, you send. The AI handles the mechanical starting point.</p>
+
+<div class="callout">
+  <div class="callout-title">Important: These prompts require attorney review</div>
+  <p>AI output is a draft, not a final product. Every document produced with these prompts must be reviewed, edited, and verified by a licensed attorney. Do not paste client-identifying information into free AI tiers — use placeholder names and substitute real details only in reviewed output.</p>
+</div>
+
+<h2>Prompt 1 — Engagement Letter</h2>
+<p>Engagement letters take 15–25 minutes to draft from scratch. Most of the language is identical across matters. This prompt generates a clean, professional engagement letter in about 90 seconds.</p>
+
+<div class="prompt-box">You are a legal document assistant helping a solo [PRACTICE AREA] attorney draft a client engagement letter.
+
+Client name: [CLIENT NAME]
+Matter: [BRIEF DESCRIPTION — e.g., "personal injury auto accident, defendant TBD"]
+Fee structure: [HOURLY at $X/hr | FLAT FEE of $X | CONTINGENCY at X%]
+Retainer required: [YES, $X | NO]
+Jurisdiction: [STATE]
+
+Draft a professional engagement letter that covers:
+1. Scope of representation (specific to this matter only)
+2. Fee structure and payment terms as described above
+3. Client responsibilities (providing documents, responding promptly)
+4. How the attorney-client relationship ends
+5. Conflict of interest acknowledgment
+6. Electronic communication consent
+
+Use a professional but accessible tone. Keep it under 600 words. Do not make jurisdiction-specific legal representations — note that the client should review terms with any questions.
+</div>
+<span class="time-saved">Time saved: 15–20 minutes per matter</span>
+
+<h2>Prompt 2 — Demand Letter (Breach of Contract)</h2>
+<p>Demand letters have a predictable structure: establish the contract, document the breach, quantify damages, state the demand, set a deadline. This prompt produces a firm, professional first draft that you adjust for tone and add citations.</p>
+
+<div class="prompt-box">You are a legal writing assistant helping draft a demand letter for breach of contract.
+
+Representing: [PLAINTIFF NAME]
+Opposing party: [DEFENDANT NAME / COMPANY]
+Contract type: [e.g., service agreement, construction contract, employment agreement]
+Contract date: [DATE]
+What defendant agreed to do: [BRIEF DESCRIPTION]
+What defendant failed to do: [SPECIFIC BREACH]
+Damages: [AMOUNT AND BASIS — e.g., "$12,500 in unpaid invoices" or "$8,000 repair costs caused by defective work"]
+Response deadline: [NUMBER] days
+
+Draft a professional demand letter that:
+- States the facts of the agreement and breach clearly and without inflammatory language
+- Quantifies damages with specificity
+- Demands payment or performance by the deadline
+- Notes that legal action will follow if demand is not met
+- Avoids threats that could constitute extortion under [STATE] law
+
+Tone: firm and professional. Length: 400–500 words.
+</div>
+<span class="time-saved">Time saved: 20–30 minutes per demand letter</span>
+
+<h2>Prompt 3 — Client Status Update Email</h2>
+<p>Status update emails are the highest-volume communication task for most small firms. Clients ask for them constantly. This prompt handles the standard update in under a minute.</p>
+
+<div class="prompt-box">You are a professional legal assistant drafting a client status update email for a [PRACTICE AREA] attorney.
+
+Client name: [CLIENT NAME] (use first name in the email)
+Matter: [BRIEF DESCRIPTION]
+Current status: [WHERE THINGS STAND — e.g., "We have filed the complaint and are waiting for defendant to respond. Deadline for response is [DATE]."]
+Next step: [WHAT HAPPENS NEXT and approximate timeline]
+Any action needed from client: [YES — describe | NO]
+
+Write a clear, warm status update email that:
+- Opens by acknowledging the client's patience
+- Explains current status in plain English (no jargon)
+- States next steps clearly with timing
+- Notes any action required from the client
+- Closes with an invitation to call with questions
+
+Length: 150–200 words. Tone: professional but warm and human.
+</div>
+<span class="time-saved">Time saved: 8–12 minutes per status email</span>
+
+<h2>Prompt 4 — Contract Review Summary Memo</h2>
+<p>When a client brings you a contract to review, the first deliverable is usually a memo summarizing the key terms and flagging risk areas. This prompt generates the skeleton of that memo — you fill in the analysis.</p>
+
+<div class="prompt-box">You are a legal writing assistant helping draft a contract review summary memo.
+
+Contract type: [e.g., commercial lease, vendor services agreement, employment offer letter]
+Client role: [BUYER/TENANT/EMPLOYEE/SERVICE PROVIDER]
+Key terms you have identified: [LIST KEY TERMS — e.g., "5-year term, $4,200/month, no assignment without landlord consent, 30-day cure period for default"]
+Significant risk areas: [LIST RISKS — e.g., "unlimited personal guarantee, no cap on liability, automatic renewal with 90-day opt-out window"]
+
+Draft a client-facing memo that:
+1. Summarizes the contract's key business terms in plain English (not legal jargon)
+2. Highlights the top 3–5 risk areas the client should understand before signing
+3. Notes 2–3 terms the client may want to negotiate
+4. Includes a "Questions for Counterparty" section with 3 suggested questions
+
+Format with clear headings. Length: 400–600 words. Assume the client is a business owner, not an attorney.
+</div>
+<span class="time-saved">Time saved: 30–45 minutes per contract review memo</span>
+
+<h2>Prompt 5 — Post-Consultation Follow-Up</h2>
+<p>The follow-up email after an initial consultation is one of the highest-leverage pieces of communication in client development. A good one converts prospects. Most attorneys never send one, or send a generic one-liner. This prompt produces a memorable, specific follow-up.</p>
+
+<div class="prompt-box">You are a professional legal assistant drafting a post-consultation follow-up email for a solo [PRACTICE AREA] attorney.
+
+Prospect name: [NAME]
+Consultation date: [DATE]
+Their situation: [2–3 sentence summary of their legal issue]
+What you discussed: [KEY POINTS — e.g., "options available, timeline, fee structure you presented"]
+Next step you proposed: [e.g., "they will send documents by Friday; you will call Monday to discuss retainer"]
+
+Write a post-consultation follow-up email that:
+- Thanks them specifically for their time (mention a specific detail from the conversation)
+- Summarizes the 2–3 key takeaways from the consultation (shows you listened)
+- Restates the next step clearly
+- Includes a soft, non-pushy statement about being ready to help if they decide to move forward
+- Closes warmly
+
+Length: 200–250 words. Tone: personal, warm, professional. This is a relationship email, not a sales pitch.
+</div>
+<span class="time-saved">Time saved: 15–20 minutes per follow-up; measurable impact on conversion</span>
+
+<h2>How to use these prompts effectively</h2>
+
+<p>A few practices that make the difference between useful output and output you end up rewriting entirely:</p>
+
+<p><strong>Be specific with the fill-in fields.</strong> Vague inputs produce vague drafts. "Contract dispute" gives you a generic template. "5-year commercial lease, tenant defaulted on month 18 of 60, landlord seeking unpaid rent plus acceleration clause" gives you something you can actually use.</p>
+
+<p><strong>Use placeholder names for confidential matters.</strong> On free AI tiers, use "Client A" and "Opposing Party B" rather than real names. Substitute the real names after you have reviewed and edited the draft in your own system.</p>
+
+<p><strong>Always review before sending.</strong> These prompts produce first drafts, not final work product. Check for accuracy, verify any legal standards mentioned, and adjust to match your voice. The goal is eliminating the blank-page problem — not eliminating your judgment.</p>
+
+<p><strong>Build a prompt library.</strong> Copy the prompts that work for your practice areas into a notes app, Notion, or Word document. Customize the defaults (jurisdiction, your typical fee structure, your tone preferences) so your starting point is already half-personalized next time.</p>
+
+<div class="cta-box">
+  <h3>Get 30 more prompts — plus implementation workflows</h3>
+  <p>The full guide covers 35 prompts across 9 workflow areas: client intake, contract drafting, demand letters, court filings, client communications, business development, research memos, admin docs, and quick-fire tasks.</p>
+  <a class="cta-btn" href="https://szeller.gumroad.com/l/ai-lawyers" target="_blank" rel="noopener">Get the Full Guide — $29</a>
+  <span class="price-note">Instant download · PDF · 30-day money-back guarantee</span>
+</div>
+
+<p>The attorneys who are pulling ahead in 2026 are not billing more hours — they are producing the same quality work faster. These prompts are a starting point. The full guide covers every major workflow category with tested, specific prompts for the drafting tasks that eat the most time in a small firm.</p>
+
+</article>
+
+<footer>
+  &copy; 2026 Shane Zeller &mdash; <a href="/">sz3ll3r.github.io</a> &mdash; <a href="mailto:szeller@blackberg.com">szeller@blackberg.com</a>
+</footer>
+
+</body>
+</html>

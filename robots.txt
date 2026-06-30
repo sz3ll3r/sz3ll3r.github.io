@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sz3ll3r.github.io/sitemap.xml

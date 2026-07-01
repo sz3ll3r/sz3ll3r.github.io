@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="40 copy-paste AI prompts that cut the routine writing work CPAs, bookkeepers, and solo accounting professionals do every week — from monthly financial narratives to tax season emails.">
+<title>40 AI Prompts Every CPA Should Be Using in 2026 | sz.dev</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0e1a;--bg2:#111827;--bg3:#1a2236;
+  --blue:#38bdf8;--green:#34d399;--purple:#a78bfa;
+  --emerald:#10b981;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1e2d40;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--blue)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:var(--blue);color:#0a0e1a!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--blue)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--emerald);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--blue);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#061a12;border:1px solid rgba(16,185,129,.3);border-left:3px solid var(--emerald);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--emerald)}
+.prompt-box{background:#061a12;border:1px solid rgba(16,185,129,.2);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#6ee7b7;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--emerald);margin-bottom:10px;display:block}
+.example-box{background:#111827;border:1px solid var(--border);border-radius:10px;padding:22px;margin:24px 0}
+.example-box .ex-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--green);margin-bottom:10px}
+.example-box p{font-size:.9rem;color:#94a3b8;margin:0;font-style:italic}
+.time-save{display:inline-block;background:#061a12;border:1px solid rgba(16,185,129,.3);border-radius:6px;padding:3px 10px;font-size:.78rem;font-weight:700;color:var(--emerald);margin-left:10px;vertical-align:middle}
+.cta-box{background:linear-gradient(135deg,#061a12,#041208);border:1px solid rgba(16,185,129,.3);border-radius:14px;padding:32px;margin:48px 0 0;text-align:center}
+.cta-box h3{font-size:1.2rem;font-weight:700;margin-bottom:10px;color:var(--text)}
+.cta-box p{color:var(--muted);font-size:.9rem;margin-bottom:22px}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--emerald);color:#041208;padding:12px 28px;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none;transition:background .2s}
+.cta-btn:hover{background:#34d399}
+footer{border-top:1px solid var(--border);padding:28px 24px;text-align:center;color:var(--dim);font-size:.82rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-links{display:flex;gap:20px;list-style:none}
+.footer-links a{color:var(--dim);text-decoration:none}
+.footer-links a:hover{color:var(--blue)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">sz<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="/#products">Products</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a href="mailto:szeller@blackberg.com">Contact</a></li>
+      <li><a class="nav-cta" href="https://szeller.gumroad.com" target="_blank" rel="noopener">Shop</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>›</span>
+    <a href="/#blog">Blog</a><span>›</span>
+    40 AI Prompts Every CPA Should Be Using
+  </div>
+
+  <div class="article-cat">Accounting & Finance</div>
+  <h1>40 AI Prompts Every CPA Should Be Using in 2026</h1>
+  <div class="article-meta">
+    <span>July 1, 2026</span>
+    <span>8 min read</span>
+    <span>CPAs, Bookkeepers, Accounting Professionals</span>
+  </div>
+
+  <div class="article-body">
+
+    <p>If you are a solo CPA or bookkeeper, a significant portion of your non-billable time goes to writing. Monthly financial narratives. Tax season document requests. Engagement letters. Status update emails. Meeting follow-ups. Advisory memos.</p>
+
+    <p>None of that is what you were trained to do. And none of it requires your professional judgment. It just requires a competent first draft — which is exactly what AI does well.</p>
+
+    <p>This article covers the 8 highest-value prompts from the 40-prompt guide I built for accounting professionals. Each one replaces 10–60 minutes of blank-screen time with a 30-second copy-paste operation.</p>
+
+    <div class="callout">
+      <p><strong>Important:</strong> Every AI output is a draft. You review it, edit it, and approve it. You are always the licensed professional responsible for the final work. These prompts do not constitute tax or legal advice.</p>
+    </div>
+
+    <h2>1. Monthly Financial Summary Narrative <span class="time-save">saves 45-60 min</span></h2>
+
+    <p>The single most time-consuming deliverable for most accounting professionals: translating the numbers into something a business owner without an accounting background can actually understand. This prompt takes the raw data and produces a client-ready narrative in 2–3 paragraphs.</p>
+
+    <div class="prompt-box"><span class="prompt-label">Copy-paste prompt</span>You are an accounting professional writing a monthly financial summary for a small business client. Use the following financial data to write a clear, professional narrative (2–3 paragraphs) that a business owner without an accounting background can understand. Avoid jargon. Focus on what the numbers mean for the business.
+
+Client type: [INDUSTRY — e.g., restaurant, dental practice, retail]
+Month: [MONTH YEAR]
+Revenue: $[AMOUNT] ([UP/DOWN] [%] vs. last month)
+Operating expenses: $[AMOUNT] ([UP/DOWN] [%] vs. last month)
+Net income: $[AMOUNT]
+Key variances: [LIST 2–3 line items that changed significantly]
+Notable one-time items: [DESCRIBE OR "none"]
+
+Write the narrative now.</div>
+
+    <div class="example-box">
+      <div class="ex-label">Example output (AI draft)</div>
+      <p>"October was a solid month for your practice. Revenue reached $47,200, up 8% from September, driven primarily by an increase in new patient appointments following the back-to-school season. Operating expenses came in at $31,800, roughly in line with last month, though your supply costs rose $1,400 — something worth monitoring heading into Q4..."</p>
+    </div>
+
+    <h2>2. Budget vs. Actual Variance Explanation <span class="time-save">saves 30-45 min</span></h2>
+
+    <p>Explaining variances in plain English is where most accountants either write too much (over-explaining) or too little (confusing the client). This prompt hits the right level.</p>
+
+    <div class="prompt-box"><span class="prompt-label">Copy-paste prompt</span>Write a professional variance analysis narrative for a client financial report. The tone should be informative, not alarming. Explain why variances occurred when possible, and suggest what the client should watch in the coming month.
+
+Budget period: [MONTH/QUARTER, YEAR]
+Total revenue — Budget: $[X], Actual: $[X], Variance: $[X] ([FAVORABLE/UNFAVORABLE])
+Total expenses — Budget: $[X], Actual: $[X], Variance: $[X] ([FAVORABLE/UNFAVORABLE])
+Top 3 variance drivers:
+1. [LINE ITEM]: Budget $[X], Actual $[X] — [BRIEF REASON IF KNOWN]
+2. [LINE ITEM]: Budget $[X], Actual $[X] — [BRIEF REASON IF KNOWN]
+3. [LINE ITEM]: Budget $[X], Actual $[X] — [BRIEF REASON IF KNOWN]
+
+Write a 2–3 paragraph narrative for inclusion in a client report.</div>
+
+    <h2>3. Tax Season Document Request Email <span class="time-save">saves 15-20 min</span></h2>
+
+    <p>You send this email dozens of times in Q1. The version most CPAs send is either too long (clients ignore it) or too short (you get a trickle of documents over 6 weeks). This prompt produces a version that is friendly, specific, and includes a numbered checklist.</p>
+
+    <div class="prompt-box"><span class="prompt-label">Copy-paste prompt</span>Write a professional, friendly email to an individual tax client requesting the documents we need to prepare their [TAX YEAR] federal and [STATE] state tax return. The tone should be helpful, not demanding. Include a clear numbered list of documents.
+
+Client situation: [W-2 employee / self-employed / rental property owner / investment income / sold a home / major life event: DESCRIBE]
+Preferred method to send documents: [CLIENT PORTAL / EMAIL / SECURE UPLOAD LINK / DROP OFF]
+Deadline for receiving documents: [DATE]
+Our firm name: [NAME]
+
+Write the email now.</div>
+
+    <h2>4. Extension Notification Email <span class="time-save">saves 10-15 min</span></h2>
+
+    <p>Clients panic when they hear "extension." This prompt produces a calm, reassuring version that explains exactly what an extension means and what they need to do.</p>
+
+    <div class="prompt-box"><span class="prompt-label">Copy-paste prompt</span>Write a professional email notifying a tax client that we are filing an extension on their behalf. Reassure them this is normal and does not mean they owe more or that there is a problem.
+
+Client name: [FIRST NAME]
+Return type: [Personal 1040 / Business S-Corp / Partnership / Other]
+Original deadline: [DATE]
+Extended deadline: [DATE]
+Estimated tax due: [AMOUNT or "we estimate you do not owe additional tax"]
+Payment required by original deadline: [YES — $AMOUNT / NO]
+
+Write the email now.</div>
+
+    <h2>5. Engagement Letter — Tax Preparation <span class="time-save">saves 60-90 min</span></h2>
+
+    <p>Writing an engagement letter from scratch is painful. This prompt produces a complete professional draft — scope, responsibilities, fee, payment terms — that you edit and sign rather than draft from a blank page. Always have your final version reviewed against your professional liability carrier's template.</p>
+
+    <div class="prompt-box"><span class="prompt-label">Copy-paste prompt</span>Draft a professional tax preparation engagement letter. Include the scope of services, client responsibilities, our firm's responsibilities, fee basis, and a disclaimer that this is not legal advice.
+
+Client name: [INDIVIDUAL NAME or BUSINESS NAME, ENTITY TYPE]
+Services: Preparation of [TAX YEAR] federal [Form 1040 / 1120S / 1065] and [STATE] state return
+Fee basis: [FLAT FEE of $X / HOURLY at $X/hr]
+Client responsibilities: Provide complete and accurate information
+Firm responsibilities: Prepare the return based on information provided
+Payment terms: [DUE UPON COMPLETION / 50% DEPOSIT UPFRONT]
+Firm name: [NAME]
+Preparer credential: [CPA/EA/other]
+
+Write the engagement letter. Use [DATE] and [CLIENT SIGNATURE LINE] placeholders.</div>
+
+    <h2>6. Management Letter — Internal Control Finding <span class="time-save">saves 20-30 min</span></h2>
+
+    <p>Writing up control findings in the right format — condition, criteria, effect, recommendation — is a learned skill. This prompt gets the structure right every time.</p>
+
+    <div class="prompt-box"><span class="prompt-label">Copy-paste prompt</span>Write a management letter paragraph describing an internal control deficiency for a small business client. State the condition found, the criteria (what proper controls look like), the potential effect, and the recommendation.
+
+Control area: [CASH / PAYROLL / ACCOUNTS PAYABLE / ACCOUNTS RECEIVABLE / OTHER]
+Condition: [DESCRIBE WHAT YOU FOUND]
+Risk: [DESCRIBE THE POTENTIAL PROBLEM]
+Recommendation: [DESCRIBE THE CONTROL YOU RECOMMEND]
+Tone: Professional, constructive, not alarming
+
+Write the paragraph now.</div>
+
+    <h2>7. Year-End Tax Planning Memo <span class="time-save">saves 30-45 min</span></h2>
+
+    <p>Clients who receive a proactive year-end planning memo stay longer and refer more. Most CPAs know this and still don't send one because writing it takes too long. This prompt changes that.</p>
+
+    <div class="prompt-box"><span class="prompt-label">Copy-paste prompt</span>Write a professional year-end tax planning memo. Summarize the client's current tax position, highlight 2–3 opportunities to reduce their tax bill before [DATE], and explain next steps clearly.
+
+Client type: [INDIVIDUAL / S-CORP / PARTNERSHIP / SOLE PROPRIETOR]
+Tax year: [YEAR]
+Estimated taxable income: $[X]
+Estimated tax liability: $[X]
+Planning opportunities:
+1. [OPPORTUNITY — e.g., "Maximize SEP-IRA contribution by Dec 31 — estimated savings $X"]
+2. [OPPORTUNITY]
+3. [OPPORTUNITY]
+Deadline for action: [DATE]
+
+Keep it under 350 words. Frame as options to discuss, not specific tax advice.</div>
+
+    <h2>8. Difficult Client Email Response <span class="time-save">saves 20-30 min</span></h2>
+
+    <p>Everyone has a client who sends an angry or confused email at the worst possible time. The blank screen when you're trying to write back professionally — without being defensive or over-apologetic — is a specific kind of awful. This prompt solves it.</p>
+
+    <div class="prompt-box"><span class="prompt-label">Copy-paste prompt</span>I received the following email from a client and need help writing a professional, de-escalating response. I want to acknowledge their concern, explain the situation clearly without being defensive, and propose a clear next step.
+
+The client's email:
+[PASTE CLIENT EMAIL HERE]
+
+My firm's situation / the facts: [EXPLAIN WHAT ACTUALLY HAPPENED]
+What I want to offer or resolve: [DESCRIBE YOUR PROPOSED RESOLUTION]
+Tone: Professional, empathetic, solution-focused
+
+Write the response email now.</div>
+
+    <h2>How Many Hours Could This Save You?</h2>
+
+    <p>The 8 prompts above cover the most time-consuming recurring writing tasks. If you use even 5 of them consistently:</p>
+
+    <ul>
+      <li>Monthly financial narratives: 45 minutes x 10 clients = 7.5 hours saved per month</li>
+      <li>Tax season document request emails: 15 minutes x 30 clients = 7.5 hours saved per Q1</li>
+      <li>Engagement letters: 60 minutes x however many new clients you take on</li>
+      <li>Year-end planning memos: 30 minutes x every client who gets one</li>
+    </ul>
+
+    <p>For a solo practitioner with 50 active clients, consistent use of AI drafting tools is worth 5–10 billable hours per month in recovered time. At even $100/hour, that's $500–$1,000 in capacity per month.</p>
+
+    <div class="callout">
+      <p><strong>The full 40-prompt guide</strong> covers all 10 accounting workflow areas: monthly reports, tax season communication, engagement letters, management letters, client onboarding, bookkeeping documentation, advisory memos, staff training, marketing copy, and administrative efficiency. Each prompt follows the same copy-paste format — no technical skill required.</p>
+    </div>
+
+    <h2>Getting Started</h2>
+
+    <p>You don't need a paid AI subscription to use any of these prompts. Claude (claude.ai) and ChatGPT (chat.openai.com) both have free tiers that handle all 40 prompts in the guide without hitting a limit.</p>
+
+    <p>The habit that gets results: before you start writing any client-facing document from scratch, check if there's a prompt for it first. Copy, fill in the brackets, run, edit. Most drafts take 30–60 seconds to generate and 5 minutes to edit into your final version.</p>
+
+    <p>Over time, save your best edited versions as personal templates. Within a month, you'll have a firm-specific prompt library that's faster and more on-voice than anything AI generates cold.</p>
+
+    <div class="cta-box">
+      <h3>Get all 40 prompts in one place</h3>
+      <p>The complete guide covers 10 workflow areas with 40 tested, copy-paste prompts — monthly reports, tax season emails, engagement letters, advisory memos, staff training, marketing copy, and more. One-time download, $29.</p>
+      <a class="cta-btn" href="https://szeller.gumroad.com" target="_blank" rel="noopener">Get the full guide — $29</a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>sz.dev — AI tools for professionals</span>
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="https://szeller.gumroad.com" target="_blank" rel="noopener">Products</a></li>
+      <li><a href="mailto:szeller@blackberg.com">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

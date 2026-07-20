@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="5 copy-paste AI prompts that handle the routine writing work property managers do every week — late rent notices, maintenance triage, owner reports, lease renewals, and deposit letters.">
+<title>5 AI Prompts Every Property Manager Should Be Using in 2026 | sz.dev</title>
+<meta property="og:title" content="5 AI Prompts Every Property Manager Should Be Using in 2026">
+<meta property="og:description" content="Late rent notices in 60 seconds. Owner reports in 3 minutes. Maintenance triage that prevents emergency call-outs. Copy-paste ready.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sz3ll3r.github.io/blog/ai-prompts-for-property-managers.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-prompts-for-property-managers.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0e1a;--bg2:#111827;--bg3:#1a2236;
+  --blue:#38bdf8;--green:#34d399;--purple:#a78bfa;
+  --amber:#f59e0b;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1e2d40;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--blue)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:var(--blue);color:#0a0e1a!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--blue)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--amber);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--blue);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#0c1a0a;border:1px solid rgba(245,158,11,.25);border-left:3px solid var(--amber);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--amber)}
+.prompt-box{background:#0a1008;border:1px solid rgba(245,158,11,.18);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#fcd34d;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--amber);margin-bottom:10px;display:block}
+.time-badge{display:inline-block;background:#0c1a0a;border:1px solid rgba(52,211,153,.3);color:var(--green);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:6px;margin:10px 0 22px}
+.cta-box{background:linear-gradient(135deg,#111a0a 0%,#0a0e1a 100%);border:1px solid rgba(245,158,11,.3);border-radius:14px;padding:36px 32px;margin:60px 0 20px;text-align:center}
+.cta-box h3{color:var(--text);font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:480px;margin:0 auto 24px;font-size:.95rem;line-height:1.7}
+.cta-btn{display:inline-block;background:var(--amber);color:#0a0e1a;font-weight:700;font-size:.95rem;padding:13px 30px;border-radius:10px;text-decoration:none;transition:background .2s}
+.cta-btn:hover{background:#fbbf24;text-decoration:none}
+.cta-sub{font-size:.8rem;color:var(--dim);margin-top:14px}
+hr.section-break{border:none;border-top:1px solid var(--border);margin:40px 0}
+footer{border-top:1px solid var(--border);padding:28px 24px;text-align:center}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-links{display:flex;gap:20px;list-style:none}
+.footer-links a{color:var(--dim);text-decoration:none;font-size:.85rem;transition:color .2s}
+.footer-links a:hover{color:var(--blue)}
+.footer-copy{font-size:.82rem;color:var(--dim)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">sz<span>.</span>dev</a>
+    <ul class="nav-links">
+      <li><a href="/#products">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="https://gumroad.com/szeller" class="nav-cta" target="_blank">Shop &#8594;</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>&#8250;</span>
+    <a href="/#blog">Blog</a><span>&#8250;</span>
+    AI Prompts for Property Managers
+  </div>
+
+  <div class="article-cat">Real Estate</div>
+
+  <h1>5 AI Prompts Every Property Manager Should Be Using in 2026</h1>
+
+  <div class="article-meta">
+    <span>July 20, 2026</span>
+    <span>&#183;</span>
+    <span>8 min read</span>
+    <span>&#183;</span>
+    <span>Copy-paste ready</span>
+  </div>
+
+  <div class="article-body">
+
+    <p>Property management is 30% logistics and 70% writing. Every late payment becomes a formal notice. Every maintenance text becomes a work order. Every month-end becomes an owner report. Every lease end becomes a renewal offer or a vacate notice. And all of that writing happens on top of actually managing the properties.</p>
+
+    <p>AI does not replace your judgment on who to evict or whether an HVAC needs replacing. But the writing? The writing is a solved problem. Below are five prompts built for the specific documents property managers produce on repeat, with the exact structure that makes them reliably useful rather than another prompt that produces something you have to rewrite.</p>
+
+    <hr class="section-break">
+
+    <h2>1. Late Rent Notice / Pay-or-Quit</h2>
+
+    <p>The most legally exposed piece of writing in property management. Too casual and it does not hold up if you go to court. Too aggressive and you create a hostile tenant situation before you know the full story. The biggest failure mode is also invisible: citing the wrong state cure period.</p>
+
+    <div class="callout"><p><strong>The trap:</strong> Cure periods range from 3 days (California) to 30 days (some states) depending on jurisdiction, and citing the wrong one can invalidate the notice. This prompt forces a flag instead of inventing a number.</p></div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">Draft a [X]-day pay-or-quit / late rent notice for a residential tenant in [state]. Tenant: [name], Unit: [address/unit #]. Rent due: $[amount], due date [date], days late: [#]. Prior late payments this lease term: [#]. Include: (1) a neutral, factual opening stating the amount owed and the specific dates involved — no assumptions about why the tenant is late, (2) the exact cure period required by [state] law stated as a hard calendar deadline, not "X days from receipt," (3) the total amount required to cure, including only late fees actually specified in the signed lease — do not invent fees, (4) plain-language next steps if payment is not received by the deadline, (5) a closing line inviting the tenant to contact management if they are facing hardship, with your preferred contact method. Keep the tone factual and non-emotional throughout — no threats, no comments about the tenant's character or reason for non-payment. Flag any place where I need to insert state-specific legal language I should verify with a local attorney or my state's landlord-tenant statute.</div>
+
+    <div class="time-badge">Time saved: 25 min per notice &#8594; 60 sec draft + 5 min legal verify</div>
+
+    <p>Always verify the flagged items against your actual state statute before sending. The model will clearly mark what it is uncertain about — that is intentional and useful, not a bug.</p>
+
+    <hr class="section-break">
+
+    <h2>2. Maintenance Request Triage</h2>
+
+    <p>A tenant texts you "the heater isn't working right." Is that an emergency same-day call-out, a 48-hour urgent ticket, or a routine item for next week's vendor visit? Getting this wrong costs money — over-dispatching emergency vendors for non-emergencies, or under-reacting to actual habitability issues.</p>
+
+    <p>This prompt takes raw tenant text and outputs a structured work order with an explicit urgency decision and justification. The justification line is the part that changes behavior: it forces you to make a defensible call rather than defaulting to "emergency" every time to avoid risk.</p>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">Turn this raw tenant maintenance message into a structured work order: "[paste tenant's text or email verbatim]". Output: (1) Issue category — plumbing / electrical / HVAC / appliance / structural / pest / other, (2) Urgency level — emergency (habitability/safety risk, same-day response), urgent (respond within 48 hrs), or routine (schedule within 1-2 weeks) — with one sentence justifying the call, (3) A rewritten description in neutral, complete-sentence form suitable for sending to a vendor or contractor, using only facts stated by the tenant — do not add details not present in the original message, (4) A list of clarifying questions to send back to the tenant if the message is missing key details (is water actively leaking, is there visible mold, does the unit not work at all vs. work poorly), (5) A short internal log line: date logged, tenant statement, and triage decision, for my records.</div>
+
+    <div class="time-badge">Time saved: prevents 1-2 misrouted emergency call-outs per month</div>
+
+    <hr class="section-break">
+
+    <h2>3. Monthly Owner Report</h2>
+
+    <p>Owner reporting is the relationship-maintenance task that most property managers underinvest in — until an owner starts calling mid-month because they have not heard anything. A consistently clear, on-time monthly report stops those calls cold. The problem is that writing it from raw notes takes 30-45 minutes per property.</p>
+
+    <p>This prompt takes bullet-point notes and produces a one-page report in the right structure. The detail that makes the biggest difference in practice: the "what does the owner need to approve" line appears every month, even if the answer is "nothing." Owners stop chasing when the report pre-answers the question they were about to ask.</p>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">Turn these monthly property notes into an owner-ready report. Property: [address]. Rent collected: $[amount] of $[amount] scheduled. Vacancy days this month: [#]. Maintenance completed: [list of items with cost each]. Outstanding maintenance/quotes pending: [list]. Lease status: [renewing/month-to-month/notice given], renewal date if applicable: [date]. Notes: [free-form notes]. Write a one-page owner report in this order: (1) Financial Summary — rent collected vs. scheduled, any variance explained in one sentence, (2) Occupancy Status — current lease status and any upcoming action needed from the owner, (3) Maintenance Completed — itemized with cost, (4) Maintenance Pending — what is outstanding and why (waiting on quote / owner approval needed / scheduled), flagging anything requiring owner sign-off, (5) Next 30 Days — what the owner should expect. Tone: professional, concise, no filler sentences, no apologetic language for normal maintenance costs. Do not add numbers or facts I did not provide.</div>
+
+    <div class="time-badge">Time saved: 30-45 min per report per property</div>
+
+    <hr class="section-break">
+
+    <h2>4. Security Deposit Disposition Letter</h2>
+
+    <p>The deposit letter is the document most likely to end up in small claims court. Judges look for two things: an itemized breakdown of every deduction, and an explicit acknowledgment of what you are <em>not</em> charging for. Most landlords get the first right and skip the second. Explicitly noting the normal wear-and-tear items you observed but did not charge makes the letter far more defensible.</p>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">Draft a security deposit disposition letter for a residential tenant who has vacated. State: [state]. Tenant: [name]. Unit: [address/unit]. Lease end date: [date]. Move-out date: [date]. Security deposit held: $[amount]. Deductions: Cleaning — [description, dollar amount]. Repairs beyond normal wear and tear — [description and dollar amount for each]. Unpaid rent — $[amount, period covered]. Other lease-authorized charges — [description, dollar amount]. Normal wear and tear items noted at move-out (do not deduct these) — [list]. My state's deposit return deadline is [X] days — I will verify the exact number against the statute before sending. Format: (1) Total deposit received, (2) All deductions itemized with one sentence explaining each, (3) Normal wear and tear items acknowledged but not charged, (4) Net refund amount to be returned, or net balance still owed if deductions exceed deposit, (5) Instructions for how the refund will be sent. Tone: factual and neutral — no accusatory or emotional language. Flag any place where you assumed a rule or filled in a detail I should verify against state law or my actual lease before this goes out.</div>
+
+    <div class="time-badge">Time saved: 40 min per disposition letter + reduced small claims exposure</div>
+
+    <hr class="section-break">
+
+    <h2>5. Lease Renewal Offer Letter</h2>
+
+    <p>The renewal offer sets the tone for whether the tenant stays and whether they feel good about staying. Vague or form-letter offers signal a transactional relationship. Clear, professional offers with explicit terms signal you run a well-managed property. The single most impactful structural change: state explicitly what happens if the tenant does not respond. Most renewal letters omit this, then create an ambiguous situation when the lease lapses.</p>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">Draft a lease renewal offer letter for a residential tenant. State: [state]. Property: [address/unit]. Tenant: [name]. Current lease end date: [date]. Renewal offer: new monthly rent $[amount], new term [X months], new end date [date], response deadline [date]. Changes to lease terms or policies at renewal: [list any, or say "none"]. How tenant accepts: [sign and return / online portal / email reply]. Structure: (1) Single warm sentence acknowledging the tenancy — not excessive, (2) Clear renewal offer including new rate, term, and response deadline, (3) What happens if tenant does not respond by the deadline — verify this against your state law and lease before sending, (4) Any policy or term changes at renewal, or a clear statement that no terms are changing, (5) How to accept and next steps. Tone: professional and clear, no filler phrases, no over-explanation. Flag anywhere state notice requirements might affect wording or timing.</div>
+
+    <div class="time-badge">Time saved: 20-30 min per renewal letter</div>
+
+    <hr class="section-break">
+
+    <h2>Using These in Practice</h2>
+
+    <p>A few notes on getting reliable output:</p>
+    <ul>
+      <li>Always specify the state. State law governs almost every landlord-tenant document and the model behaves very differently with a jurisdiction than without one.</li>
+      <li>Fill in the brackets before you paste. A half-filled prompt produces a half-useful output.</li>
+      <li>Read the flagged items. Any of these prompts will explicitly mark places where you need to verify state law or check your lease. That flagging is intentional — treat it as a checklist, not an error.</li>
+      <li>Do not send AI output directly to a tenant without reading it. These are first drafts. They are very good first drafts, but you are the professional who knows the context.</li>
+    </ul>
+
+    <div class="cta-box">
+      <h3>Need the full set?</h3>
+      <p>The complete guide covers 30+ property management workflows — late notices, triage, owner reporting, renewals, deposit letters, tenant screening communications, move-in/move-out documentation, and more. One-time purchase, no subscription.</p>
+      <a href="https://szeller.gumroad.com/l/owfbu" class="cta-btn" target="_blank">Get AI for Property Managers &#8594; $29</a>
+      <div class="cta-sub">One-time purchase &#183; Instant download &#183; Works with ChatGPT, Claude, Copilot</div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">&#169; 2026 Shane Zeller. All rights reserved.</span>
+    <ul class="footer-links">
+      <li><a href="https://gumroad.com/szeller" target="_blank">Gumroad</a></li>
+      <li><a href="https://www.upwork.com/freelancers/~01e2b86269fcfda47d" target="_blank">Upwork</a></li>
+      <li><a href="https://github.com/sz3ll3r" target="_blank">GitHub</a></li>
+      <li><a href="mailto:szeller@blackberg.com">Email</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="5 copy-paste AI prompts CPAs and accountants use to explain tax notices, IRS letters, and 'why do I owe?' questions to clients — in plain English, in minutes.">
+<title>AI Prompts for Tax Season Client Questions: 5 That Every CPA Should Keep Handy | sz.dev</title>
+<meta property="og:title" content="AI Prompts for Tax Season Client Questions: 5 That Every CPA Should Keep Handy">
+<meta property="og:description" content="Client calls asking 'what does this IRS letter mean?' and 'why do I owe this year?' are the highest-volume low-value interruptions in accounting. These prompts handle them in minutes.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sz3ll3r.github.io/blog/ai-tax-season-for-accountants.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-tax-season-for-accountants.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#061210;--bg2:#081a14;--bg3:#0d2318;
+  --emerald:#10b981;--light-green:#6ee7b7;--cyan:#22d3ee;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1a3028;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(6,18,16,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--emerald)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--emerald)}
+.nav-cta{background:var(--emerald);color:#061210!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--emerald)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--emerald);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--emerald);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#041208;border:1px solid rgba(16,185,129,.2);border-left:3px solid var(--emerald);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--emerald)}
+.prompt-box{background:#041208;border:1px solid rgba(16,185,129,.18);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#6ee7b7;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--emerald);margin-bottom:10px;display:block}
+.time-badge{display:inline-block;background:#041208;border:1px solid rgba(16,185,129,.3);color:var(--emerald);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:6px;margin:10px 0 22px}
+.cta-box{background:linear-gradient(135deg,#041208 0%,#061210 100%);border:1px solid rgba(16,185,129,.3);border-radius:14px;padding:36px 32px;margin:60px 0 20px;text-align:center}
+.cta-box h3{color:var(--text);font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:480px;margin:0 auto 24px;font-size:.95rem;line-height:1.7}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,var(--emerald),var(--cyan));color:#061210;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:-.01em;transition:opacity .2s}
+.cta-btn:hover{opacity:.9;text-decoration:none;color:#061210}
+.cta-note{font-size:.8rem;color:var(--dim);margin-top:14px}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24px;text-align:center;color:var(--dim);font-size:.85rem;margin-top:80px}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--emerald)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .article-wrap{padding:90px 18px 60px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">sz<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="/#guides">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a class="nav-cta" href="https://szeller.gumroad.com/l/aiaccountants" target="_blank" rel="noopener">Get the Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span>
+    <a href="/#blog">Blog</a><span>&rsaquo;</span>
+    AI Prompts for Accountants
+  </div>
+
+  <div class="article-cat">Accounting &middot; AI Tools</div>
+
+  <h1>AI Prompts for Tax Season Client Questions: 5 That Every CPA Should Keep Handy</h1>
+
+  <div class="article-meta">
+    <span>July 2026</span>
+    <span>9 min read</span>
+    <span>Copy-paste ready</span>
+  </div>
+
+  <div class="article-body">
+
+    <p><em>The calls that interrupt your actual tax work the most — "what does this letter mean?" and "why do I owe this year?" — are also the ones AI can help you answer fastest.</em></p>
+
+    <p>For most accounting practices, the productivity killer during busy season is not the returns themselves. It is the client communication that runs alongside them. Every week brings a fresh wave of phone calls and emails from clients holding IRS notices they cannot interpret, asking why they owe more than last year, or wanting a plain-English summary of what just happened with their estimated payments.</p>
+
+    <p>Each of these conversations is important — a confused or anxious client is not a satisfied client — but most of the communication work is highly repetitive. You have explained CP2000 notices a hundred times. You have described the estimated payment underpayment penalty more times than you can count. The specific numbers change, the underlying explanation does not.</p>
+
+    <p>That is where AI earns its keep in an accounting practice. Below are five prompts built specifically for client-facing tax communication — the translation layer between what the IRS or your software says and what the client actually understands. Each prompt produces a draft you review and send. Each one saves between 10 and 30 minutes per use during the weeks when those minutes matter most.</p>
+
+    <div class="callout">
+      <p><strong>Standard practice for every prompt below:</strong> AI drafts, you verify and send. Check every number the model produces against your actual source documents before the email leaves your outbox. These are communication drafts, not advisory opinions — your professional judgment is still required on every response.</p>
+    </div>
+
+    <h2>1. IRS Notice Plain-English Explanation</h2>
+
+    <p><strong>The problem it solves:</strong> A client forwards a CP2000 or CP503 or LT11 with a one-line message: "What does this mean?" The notice is technically clear to you. To the client it reads as a threat. Writing a reassuring, accurate explanation that does not overstate urgency and does not dismiss what may be a real issue takes longer than it should. This prompt does the translation reliably.</p>
+
+    <div class="time-badge">Saves ~15 min per notice explanation</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are an accounting communication assistant helping a CPA explain an IRS notice to a non-accountant client. I'll give you the notice type and key details. Write a plain-English client email that:
+
+(1) Opens with a calm, reassuring line — do not alarm the client, but do not dismiss the notice as unimportant if it requires action.
+(2) Explains in one short paragraph what the notice is — what the IRS is saying happened or what they are claiming.
+(3) Explains what the client needs to do, if anything — be specific (respond by [date], gather these documents, take no action if notice is informational only).
+(4) Explains what our firm will do and on what timeline.
+(5) Closes with one clear point of contact and an invitation to call with questions.
+
+Use plain English. No jargon. No Latin abbreviations. Keep it under 250 words.
+
+Notice type: [e.g., CP2000, CP503, LT11, CP14]
+Key claim or issue: [describe what the notice says in plain terms]
+Response deadline if any: [date or "no response required"]
+What the firm is doing: [describe your planned action]
+Urgency level: [low / medium / high — your assessment]</div>
+
+    <p><strong>The tone calibration matters:</strong> Without the "do not alarm" instruction, the model defaults to a neutral-professional tone that reads as serious to a client who already reads every IRS letter as a crisis. The explicit instruction to open reassuringly while still being accurate is what makes the email functional for a non-accountant reader.</p>
+
+    <h2>2. "Why Do I Owe This Year?" Explanation</h2>
+
+    <p><strong>The problem it solves:</strong> This is the single most common client call in the weeks after returns are filed. The client expected a refund or expected to owe less, and now wants an explanation. The real answer involves multiple factors — withholding changes, income changes, deduction losses, rate changes. Writing out all of the moving pieces in client-readable language for each affected client takes significant time when you are trying to close out a long filing season.</p>
+
+    <div class="time-badge">Saves ~20 min per "why do I owe?" call follow-up</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are an accounting communication assistant helping a CPA explain to a client why they owe taxes this year or received a smaller refund than expected. I'll give you the key factors. Write a client-facing email explanation that:
+
+(1) Acknowledges the client's question directly in the first sentence — do not start with pleasantries.
+(2) Explains each factor that contributed to the balance due or reduced refund in plain English, using the information I provide below. For each factor: what changed, why it affected their tax outcome, and approximately how much it contributed (use the figures I give you — do not calculate anything not in my input).
+(3) Notes if any of these factors is something that can be addressed going forward (e.g., adjusting withholding, making estimated payments) — only if applicable based on what I tell you.
+(4) Closes with clear next steps and an offer to discuss by phone.
+
+Keep each factor to 2–3 sentences. No jargon. Under 300 words total.
+
+Client name: [first name]
+Current year balance due: $[amount]
+Prior year outcome: [refund of $X / balance due of $X / roughly break-even]
+Contributing factors (list each with approximate dollar impact):
+  - [Factor 1, e.g., "W-2 withholding reduced mid-year, under-withheld by approx. $X"]
+  - [Factor 2, e.g., "side business income of $X with no estimated payments"]
+  - [Factor 3, e.g., "loss of itemized deductions due to cap on SALT at $10K"]
+Forward-looking adjustment possible: [yes — describe / no]</div>
+
+    <p><strong>Why "do not calculate anything not in my input" is essential:</strong> Without this, the model will attempt to verify or cross-check your figures — and may produce slightly different numbers from what the software shows. Exact tax calculations require your software; the prompt's job is to package the explanation, not to re-run the math. This instruction keeps the model in its lane.</p>
+
+    <h2>3. Estimated Payment Underpayment Explanation</h2>
+
+    <p><strong>The problem it solves:</strong> Self-employed clients, freelancers, and business owners who missed estimated payment deadlines frequently do not understand why they are being penalized, how the penalty is calculated, or what they can do differently next year. The explanation involves a concept — the safe harbor — that requires careful framing to avoid clients either over-reacting ("I owe a penalty, I must have done something wrong") or deciding estimated payments are optional going forward.</p>
+
+    <div class="time-badge">Saves ~12 min per underpayment explanation</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are an accounting communication assistant helping a CPA explain a federal estimated tax underpayment penalty to a non-accountant client. Write a plain-English email explanation that covers:
+
+(1) What the penalty is — one sentence describing what an underpayment penalty means in simple terms (the government charges interest when taxes are not paid throughout the year as income is earned).
+(2) Why this client incurred it — using the specific facts I provide below. Explain in 2–3 sentences without using IRS jargon.
+(3) The safe harbor rule — explain in 2 sentences that there is a way to avoid this penalty going forward (pay either 100% of last year's tax liability or 90% of this year's liability through withholding or estimated payments — whichever is smaller). Note that I will confirm which applies to this client's situation.
+(4) What we recommend going forward — I'll fill this in; leave [CPA RECOMMENDATION] as the placeholder.
+(5) What the penalty amount is and how it will be paid — using the figure I give you.
+
+Plain English throughout. No Form numbers unless I include them. Under 250 words.
+
+Client name: [first name]
+Underpayment penalty amount: $[amount]
+Primary reason penalty was incurred: [e.g., "self-employment income with no estimated payments made during the year"]
+Prior year tax liability: $[amount — for safe harbor reference]</div>
+
+    <h2>4. Year-End Tax Planning Summary</h2>
+
+    <p><strong>The problem it solves:</strong> The most valuable client communication in Q4 is the one that most accountants either do not send or spend too long writing — the "here is what we are planning before year-end and why" email that keeps the client engaged and positions you as proactive rather than reactive. This prompt turns the bullet points you already have into a well-structured client-facing summary.</p>
+
+    <div class="time-badge">Saves ~25 min per year-end planning email</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are an accounting communication assistant helping a CPA draft a year-end tax planning summary email for a client. I'll give you the planning points. Write a professional, easy-to-read email that:
+
+(1) Opens with a brief statement of why we are reaching out now (there are actions worth taking before year-end that cannot be taken after).
+(2) Summarizes each planning recommendation I list below in 2–3 sentences each: what we recommend, why it matters for this client's situation (using the facts I give you), and what the client needs to do or decide. Use plain English — avoid jargon.
+(3) Includes a clear call to action: what we need from the client, and by what date, to implement each recommendation before December 31.
+(4) Closes with a specific offer to schedule a call, including how to book it.
+
+Important: Do not add planning recommendations I have not mentioned. Do not state dollar amounts I have not given you. Use [AMOUNT] as a placeholder for any figures I need to supply.
+
+Client name: [first name]
+Client situation summary: [brief: e.g., "single-member LLC, expects $[X] net profit this year, currently no retirement contributions"]
+Planning recommendations (list each):
+  - [Recommendation 1 with brief rationale]
+  - [Recommendation 2]
+  - [Recommendation 3]
+Deadline for client to respond or act: [date]
+How to schedule a call: [booking link or instructions]</div>
+
+    <p><strong>The "do not add recommendations" instruction:</strong> AI will enthusiastically expand a planning email with additional suggestions that seem reasonable but may not apply to this client's specific situation. That creates a professional liability problem when something you did not plan for gets treated as advice. This instruction keeps the email to the specific points you have reviewed.</p>
+
+    <h2>5. "Is This Deduction Legit?" Client Email Response</h2>
+
+    <p><strong>The problem it solves:</strong> Every tax season brings a cluster of client emails asking whether some expense is deductible — often forwarded with a screenshot from a financial influencer or a friend's advice. Responding in a way that is accurate, does not give legal advice about something you have not reviewed, and does not make the client feel stupid for asking is a small but real communication skill. This prompt handles it.</p>
+
+    <div class="time-badge">Saves ~10 min per deduction inquiry</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are an accounting communication assistant helping a CPA respond to a client's question about whether a specific expense is tax deductible. Write a professional email response that:
+
+(1) Acknowledges the question without dismissing it.
+(2) Explains the general rule that applies to this type of expense — using the background I provide. Keep it to 2–3 sentences. Do not provide a specific dollar figure or final deduction determination — that depends on reviewing the client's documentation.
+(3) Notes what documentation we would need to see to determine the actual deductible amount (receipts, business use log, percentage of business vs. personal use, etc.) — based on the expense type I describe.
+(4) States clearly what we will do with the documentation once the client provides it.
+(5) Closes with a note that we will incorporate this into their return or planning once the documentation is reviewed.
+
+Do not make a definitive statement about whether the expense is or is not deductible — that determination requires reviewing the specifics, and this email should reflect that.
+
+Client name: [first name]
+Expense the client is asking about: [describe — e.g., "home office," "vehicle used for client visits," "business meals"]
+Relevant general rule or context: [brief CPA-facing note — e.g., "home office requires exclusive and regular use for business; percentage deduction based on square footage"]
+Documentation needed: [list what you would need to evaluate it]</div>
+
+    <h2>Building These Into Your Workflow</h2>
+
+    <p>The most efficient way to use these prompts is to maintain them as saved templates in your email client or a plain text file — one for each notice type you see regularly, one for the underpayment explanation, one for the year-end planning email. The client-specific details you fill in take two to three minutes. The draft comes back in seconds. You spend five minutes reviewing and adjusting rather than 25 minutes writing from scratch.</p>
+
+    <p>These five cover client communication specifically. The complete guide includes prompts for monthly financial narrative writing, management report drafting, internal memo templates, and the full range of recurring accountant writing tasks that compound across hundreds of clients over a tax season.</p>
+
+    <div class="cta-box">
+      <h3>40+ AI Prompts for Accountants — Full Guide</h3>
+      <p>These five cover client communication. The complete guide has 40 prompts covering monthly narratives, management reports, tax season emails, client-facing explainers, and more — all written specifically for CPAs, bookkeepers, and solo accounting professionals.</p>
+      <a class="cta-btn" href="https://szeller.gumroad.com/l/aiaccountants" target="_blank" rel="noopener">Get AI for Accountants &rarr; $29</a>
+      <p class="cta-note">One-time purchase. Instant download. 30-day money-back guarantee.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 sz.dev &mdash; <a href="/">Home</a> &middot; <a href="/#guides">Guides</a> &middot; <a href="mailto:szeller@blackberg.com">Contact</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="5 copy-paste AI prompts that help solo and small-firm attorneys handle client intake faster — conflicts documentation, engagement letters, fee explanations, and more.">
+<title>AI for Client Intake: 5 Prompts Every Solo Attorney Should Know | sz.dev</title>
+<meta property="og:title" content="AI for Client Intake: 5 Prompts Every Solo Attorney Should Know">
+<meta property="og:description" content="Client intake is where cases are won or lost before work even begins. These five AI prompts help solo attorneys onboard new clients faster without cutting corners on conflicts or engagement terms.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sz3ll3r.github.io/blog/ai-client-intake-for-lawyers.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-client-intake-for-lawyers.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0c10;--bg2:#0f1218;--bg3:#141a22;
+  --gold:#d4af37;--steel:#64748b;--amber:#f59e0b;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1e2535;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,12,16,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:#0a0c10!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--gold);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#0d0a04;border:1px solid rgba(212,175,55,.2);border-left:3px solid var(--gold);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--gold)}
+.prompt-box{background:#0d0a04;border:1px solid rgba(212,175,55,.18);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#f0d060;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:10px;display:block}
+.time-badge{display:inline-block;background:#0d0a04;border:1px solid rgba(212,175,55,.3);color:var(--gold);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:6px;margin:10px 0 22px}
+.cta-box{background:linear-gradient(135deg,#0d0a04 0%,#0a0c10 100%);border:1px solid rgba(212,175,55,.3);border-radius:14px;padding:36px 32px;margin:60px 0 20px;text-align:center}
+.cta-box h3{color:var(--text);font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:480px;margin:0 auto 24px;font-size:.95rem;line-height:1.7}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--amber));color:#0a0c10;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:-.01em;transition:opacity .2s}
+.cta-btn:hover{opacity:.9;text-decoration:none;color:#0a0c10}
+.cta-note{font-size:.8rem;color:var(--dim);margin-top:14px}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24px;text-align:center;color:var(--dim);font-size:.85rem;margin-top:80px}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--gold)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .article-wrap{padding:90px 18px 60px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">sz<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="/#guides">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a class="nav-cta" href="https://szeller.gumroad.com/l/ailawyers" target="_blank" rel="noopener">Get the Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span>
+    <a href="/#blog">Blog</a><span>&rsaquo;</span>
+    AI Prompts for Lawyers
+  </div>
+
+  <div class="article-cat">Legal Practice &middot; AI Tools</div>
+
+  <h1>AI for Client Intake: 5 Prompts Every Solo Attorney Should Know in 2026</h1>
+
+  <div class="article-meta">
+    <span>July 2026</span>
+    <span>9 min read</span>
+    <span>Copy-paste ready</span>
+  </div>
+
+  <div class="article-body">
+
+    <p><em>Client intake is where cases are won or lost before work even begins. These prompts handle the documentation work so you can focus on the conversation.</em></p>
+
+    <p>For a solo or small-firm attorney, the intake process is one of the most time-consuming parts of the practice that clients never see. Before you can bill a single hour, you have already written a conflicts check summary, drafted an engagement letter, explained your fee structure in writing, and summarized what the client told you in the intake call — often from rough notes taken while you were simultaneously asking follow-up questions.</p>
+
+    <p>That paperwork window between "client signs up" and "actual work begins" is where AI has the highest leverage in a legal practice. The reasoning and judgment are yours. The drafting is not something that needs to be. Below are five prompts built specifically for the intake phase — each tested to produce attorney-ready drafts, not generic boilerplate that you then have to rewrite entirely.</p>
+
+    <div class="callout">
+      <p><strong>Important framing for every prompt below:</strong> AI produces a draft. You review it, confirm every fact against what the client actually told you, verify citations against your jurisdiction's current rules, and take professional responsibility for what goes out. Never send AI output directly. These prompts are first-draft generators, not final-document generators.</p>
+    </div>
+
+    <h2>1. Intake Call Summary</h2>
+
+    <p><strong>The problem it solves:</strong> After an intake call, you have notes — sometimes detailed, sometimes a page of fragments depending on how fast the client was talking. Turning those into a clean chronological summary that can go in the file and serve as the basis for the engagement letter takes anywhere from 15 to 40 minutes. AI cuts that to under five minutes, and does it more consistently than handwriting the same thing at the end of every call.</p>
+
+    <div class="time-badge">Saves ~20 min per intake call</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a legal intake documentation assistant. I'll give you my raw notes from a client intake call. Produce a clean, attorney-facing case intake summary in this format:
+
+(1) Client and matter identification — name, contact info, referral source if mentioned, matter type.
+(2) Factual background — neutral, third-person chronological narrative using only facts the client stated. No legal conclusions. No speculation. Flag any timeline gaps or inconsistencies the client mentioned.
+(3) Client's stated goals — what outcome the client wants, in their own terms.
+(4) Issues to investigate — list the factual and legal questions my notes raise, based only on what was discussed.
+(5) Next steps discussed — any commitments made to the client during the call.
+(6) Missing information — what the client could not or did not provide that I will need before opening the matter formally.
+
+Do not invent details. If my notes are unclear on a point, flag it with [VERIFY] rather than guessing.
+
+Raw notes: [paste your intake notes here]
+Practice area: [e.g., family law, estate planning, business litigation]
+Jurisdiction: [state]</div>
+
+    <p><strong>Why this structure matters:</strong> The "No legal conclusions. No speculation." instruction is what keeps the summary useful as a file document. Without it, AI will start making observations like "client appears to have a strong breach of contract claim" — which is a legal conclusion you have not made yet and should not be in a file document attributed to intake notes. The [VERIFY] flag convention catches gaps without the model inventing a plausible-sounding fill-in.</p>
+
+    <h2>2. Conflicts Check Documentation</h2>
+
+    <p><strong>The problem it solves:</strong> Running conflicts is not just a software search — it is a judgment call that needs to be documented. You run the names, you review the results, you make a determination. The documentation of that determination is what protects you. Most attorneys either do not document it at all or write three sentences that would not hold up to a bar complaint. This prompt produces a properly structured conflicts memo.</p>
+
+    <div class="time-badge">Saves ~10 min per conflicts review</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a professional responsibility documentation assistant. Draft a conflicts check memorandum for a new client matter. Use this structure:
+
+(1) Matter header — firm name, date, attorney name, client name, matter name, matter type.
+(2) Parties searched — list of all names and entities I searched in our conflicts database, including the prospective client, adverse parties named by the client, related entities, and any other names flagged during intake.
+(3) Search results summary — what the search returned for each name: no results / results reviewed and determined non-conflicting / potential conflict identified (describe if applicable).
+(4) Attorney determination — one paragraph stating the attorney's conclusion: no conflict exists and the matter may proceed, a waivable conflict exists (describe and note whether waiver will be sought), or the firm cannot represent the client (state why).
+(5) Action taken — what happens next: matter opened, conflict waiver process initiated, or matter declined.
+
+Do not invent search results. I will fill in the actual results. Produce the memo structure with placeholders in brackets for any information I need to supply.
+
+Client name: [name]
+Adverse parties disclosed by client: [list]
+Matter type: [description]
+Jurisdiction: [state]</div>
+
+    <p><strong>The value here is structure, not content:</strong> A conflicts memo that documents your search, your review, and your decision is what you need if a bar grievance ever comes up six months later. The AI is not doing the conflicts check — you are. It is producing the memo framework so that your determination is recorded in a consistent format every time.</p>
+
+    <h2>3. Engagement Letter First Draft</h2>
+
+    <p><strong>The problem it solves:</strong> Every practice area needs a slightly different engagement letter, and writing one from scratch every time is unnecessary. But adapting a prior letter without reading it carefully enough is how mistakes propagate — a clause left in from the wrong matter, a fee provision that does not match what you told the client verbally. This prompt produces a clean engagement letter draft from the intake details so you are editing, not copying.</p>
+
+    <div class="time-badge">Saves ~25 min per new engagement</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">Act as an engagement-letter drafting assistant for a solo/small-firm attorney. Draft a professional engagement letter for a new client matter. Include these sections, in order:
+
+(1) Introduction — one paragraph confirming representation and the scope of the engagement.
+(2) Scope of representation — specific description of what the firm is being engaged to do, with an explicit carve-out for what is not included. Use the details I provide below; do not expand scope beyond what I state.
+(3) Fees and billing — describe the fee structure (hourly, flat, or contingency) and billing cycle using the figures I provide. Do not invent amounts. Use [RATE], [FLAT FEE], or [CONTINGENCY PERCENTAGE] as placeholders for anything I do not provide.
+(4) Expenses — note that the client is responsible for out-of-pocket costs (filing fees, court reporters, etc.) and how they will be billed.
+(5) Retainer — if applicable, state the retainer amount, how it is held, and when/how it will be replenished.
+(6) Client responsibilities — what the client must do: provide information, respond promptly, notify us of changes.
+(7) Termination — how either party may end the representation, obligations on termination.
+(8) Confidentiality and conflicts statement — brief plain-English statement consistent with model rules language. Flag that I will verify this against my state's current rules before use.
+(9) Signature block — attorney name, firm, client name, signature and date lines.
+
+Tone: professional, plain English, readable by a non-lawyer. No Latin. No excessive hedging.
+
+Practice area: [e.g., business litigation, estate planning]
+Scope: [describe what you are being engaged to do]
+Fee structure: [hourly at $X/hr / flat fee of $X / contingency at X%]
+Retainer: [$X / none]
+Jurisdiction: [state]
+Client name and address: [details]</div>
+
+    <p><strong>After the draft:</strong> Have your jurisdiction-specific template or bar association's model language next to you when you review. Flag and replace any generic placeholder the model used. The engagement letter is one of the few documents where a one-time review against your actual state rules is worth the time every time — the model will warn you to do this, but the reminder only matters if you actually do it.</p>
+
+    <h2>4. Fee Explanation Email</h2>
+
+    <p><strong>The problem it solves:</strong> "What am I actually paying for?" is the question clients ask after signing an engagement letter, often via email, sometimes with a tone that suggests they did not read the engagement letter carefully enough. Writing an accurate, non-defensive explanation of your fee structure without sounding like you are re-litigating the intake conversation is harder than it looks. This prompt handles it cleanly.</p>
+
+    <div class="time-badge">Saves ~10 min per fee inquiry</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">Act as a client-communication assistant for a law firm. Write a clear, professional email response to a client who has asked for an explanation of how they will be billed. Requirements:
+
+- Do not be defensive or apologetic about the fee structure.
+- Explain how the billing works in plain English, using the details I provide below.
+- Explain what the retainer is, how it works, and when it will be replenished (if applicable).
+- Explain how and when invoices are sent and what the payment terms are.
+- Close with an invitation to call if they have further questions, with a specific offer to schedule a 10-minute call rather than leaving it open-ended.
+- Keep the tone warm and businesslike, not stiff or formal.
+- Under 250 words.
+
+Fee structure: [hourly at $X/hr / flat fee / contingency]
+Retainer details: [$X held in trust / no retainer]
+Billing cycle: [monthly / upon completion / milestone-based]
+Invoice due date: [X days from invoice]
+Attorney name: [name]</div>
+
+    <p><strong>Why tone matters here:</strong> A fee explanation email that reads as defensive implicitly validates the client's concern. One that is matter-of-fact and clear reassures them without overcorrecting. The "do not be defensive" instruction is the single piece that changes the output most noticeably — without it, the model produces language like "we understand billing can be confusing" which does the opposite of what you want.</p>
+
+    <h2>5. Initial Consultation Follow-Up</h2>
+
+    <p><strong>The problem it solves:</strong> When a prospective client does not retain you after the initial consultation, a well-written non-engagement letter protects you. When they do retain you, a follow-up confirming what was discussed and what happens next sets expectations clearly and demonstrates professionalism. Most attorneys send neither. This prompt handles both scenarios.</p>
+
+    <div class="time-badge">Saves ~15 min per consultation follow-up</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">Act as a legal communication drafting assistant. Write a follow-up email after an initial consultation with a prospective client. I will specify whether the client is being retained or not.
+
+IF RETAINED — confirm the following in order: (1) thank the client for the consultation, briefly confirm the matter they are retaining us for in one sentence, (2) describe the next concrete steps we will take and what we need from the client to begin, (3) note that an engagement letter and/or retainer invoice follows under separate email, (4) provide one clear point of contact for questions.
+
+IF NOT RETAINED — write a non-engagement letter that: (1) thanks the client for the consultation, (2) clearly states that our firm will not be representing them in this matter, (3) notes any applicable statute of limitations concern if I provide one — flagged with [ATTORNEY TO VERIFY] since I am responsible for confirming the actual deadline, (4) recommends they seek other counsel promptly, (5) does not provide legal advice of any kind, (6) does not state the reason for non-engagement.
+
+Scenario: [retained / not retained]
+Client name: [name]
+Matter type: [brief description]
+If retained — next steps agreed: [list what you committed to do first]
+If not retained — statute of limitations concern (if any): [describe or say none]
+Attorney name: [name]
+Firm name: [name]</div>
+
+    <p><strong>The non-engagement letter is not optional:</strong> A well-drafted non-engagement letter that clearly states the firm will not represent the client closes the loop on potential claims of an implied attorney-client relationship. The prompt's instruction to never state the reason for non-engagement is there because reasons open a separate set of issues. Clean, clear, no explanation.</p>
+
+    <h2>Using These in Practice</h2>
+
+    <p>The highest-value workflow is running the intake summary prompt while your notes are still fresh — immediately after the call ends, before moving on to the next thing. That summary then feeds directly into the conflicts check prompt, which feeds into the engagement letter. The whole intake documentation sequence can go from open call notes to a complete client file in under 30 minutes for a routine new matter, versus the hour-plus it typically takes when each document is written from scratch.</p>
+
+    <p>These five prompts cover intake specifically. The complete guide includes prompts for demand letters, motion drafts, client status updates, deposition preparation, and end-of-matter close-out documentation — the full cycle of routine drafting work that eats associate and partner time across practice areas.</p>
+
+    <div class="cta-box">
+      <h3>The Complete AI Prompt Library for Attorneys</h3>
+      <p>These five cover client intake. The full guide has 40+ prompts spanning the complete matter lifecycle — from intake through demand letters, deposition prep, status updates, and matter close-out — written specifically for solo and small-firm practitioners.</p>
+      <a class="cta-btn" href="https://szeller.gumroad.com/l/ailawyers" target="_blank" rel="noopener">Get AI for Lawyers &rarr; $29</a>
+      <p class="cta-note">One-time purchase. Instant download. 30-day money-back guarantee.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 sz.dev &mdash; <a href="/">Home</a> &middot; <a href="/#guides">Guides</a> &middot; <a href="mailto:szeller@blackberg.com">Contact</a></p>
+</footer>
+
+</body>
+</html>

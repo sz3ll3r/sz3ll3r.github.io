@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="5 copy-paste AI prompts that handle the first-pass contract review — key terms summary, red flag identification, redline drafts, indemnification analysis, and client-facing explainers.">
+<title>AI for Contract Review: 5 Prompts That Handle the First Pass | sz.dev</title>
+<meta property="og:title" content="AI for Contract Review: 5 Prompts That Handle the First Pass">
+<meta property="og:description" content="Contract review is where attorney time compounds fastest — the same work, deal after deal. These five AI prompts cut the first-pass review time in half without touching your judgment on the substance.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sz3ll3r.github.io/blog/ai-contract-review-for-lawyers.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-contract-review-for-lawyers.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0c10;--bg2:#0f1218;--bg3:#141a22;
+  --gold:#d4af37;--steel:#64748b;--amber:#f59e0b;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1e2535;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,12,16,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:#0a0c10!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--gold);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#0d0a04;border:1px solid rgba(212,175,55,.2);border-left:3px solid var(--gold);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--gold)}
+.prompt-box{background:#0d0a04;border:1px solid rgba(212,175,55,.18);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#f0d060;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:10px;display:block}
+.time-badge{display:inline-block;background:#0d0a04;border:1px solid rgba(212,175,55,.3);color:var(--gold);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:6px;margin:10px 0 22px}
+.cta-box{background:linear-gradient(135deg,#0d0a04 0%,#0a0c10 100%);border:1px solid rgba(212,175,55,.3);border-radius:14px;padding:36px 32px;margin:60px 0 20px;text-align:center}
+.cta-box h3{color:var(--text);font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:480px;margin:0 auto 24px;font-size:.95rem;line-height:1.7}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--amber));color:#0a0c10;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:-.01em;transition:opacity .2s}
+.cta-btn:hover{opacity:.9;text-decoration:none;color:#0a0c10}
+.cta-note{font-size:.8rem;color:var(--dim);margin-top:14px}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24px;text-align:center;color:var(--dim);font-size:.85rem;margin-top:80px}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--gold)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .article-wrap{padding:90px 18px 60px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">sz<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="/#guides">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a class="nav-cta" href="https://szeller.gumroad.com/l/ailawyers" target="_blank" rel="noopener">Get the Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span>
+    <a href="/#blog">Blog</a><span>&rsaquo;</span>
+    AI Prompts for Lawyers
+  </div>
+
+  <div class="article-cat">Legal Practice &middot; AI Tools</div>
+
+  <h1>AI for Contract Review: 5 Prompts That Handle the First Pass</h1>
+
+  <div class="article-meta">
+    <span>July 2026</span>
+    <span>10 min read</span>
+    <span>Copy-paste ready</span>
+  </div>
+
+  <div class="article-body">
+
+    <p><em>Contract review is where attorney time compounds fastest — the same analytical work, deal after deal, agreement after agreement. These prompts handle the first pass. Your judgment handles the rest.</em></p>
+
+    <p>If you are a solo or small-firm attorney doing transactional work, the economics of contract review are straightforward and uncomfortable: the first pass takes the most time, produces the least billable leverage, and involves the most repetition. Reading a 40-page supply agreement for the third time this month to identify the same class of issues you found in the last one is not where your training should be deployed.</p>
+
+    <p>AI is not a replacement for legal review — it cannot substitute for the judgment call on whether a limitation of liability clause is acceptable given the client's specific risk profile. What it can do is compress the time between "received the document" and "I know what I am looking at." The five prompts below are designed specifically for that compression: they extract, flag, redline, analyze, and translate — the mechanical work of the first pass — so you can spend your time on the substantive judgment work that actually requires a lawyer.</p>
+
+    <div class="callout">
+      <p><strong>Before you use any prompt below:</strong> AI-generated contract analysis is a starting point, not a conclusion. Every flag, redline, and risk assessment the model produces must be verified against the actual contract text and your jurisdiction's current law. Use these as a first-pass tool, not a final-pass tool. The professional responsibility is yours.</p>
+    </div>
+
+    <h2>1. Key Terms Summary</h2>
+
+    <p><strong>The problem it solves:</strong> Before you can advise on a contract, you need to know what is actually in it — the parties, the term, the payment structure, the key deliverables, the termination rights, the governing law. For a document you have not seen before, building that summary from scratch takes 20 to 40 minutes depending on length. This prompt does it in under two minutes and produces a one-page summary you can use in a client call immediately afterward.</p>
+
+    <div class="time-badge">Saves ~25 min per new contract</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a legal contract analysis assistant. I am going to paste a contract below. Produce a structured key-terms summary in this exact format:
+
+(1) Parties — full legal names and roles (e.g., Vendor, Customer, Licensor).
+(2) Effective date and term — when it starts, when it ends, and auto-renewal language if any.
+(3) Core obligations — what each party is required to do. Two to four bullet points per party, factual only.
+(4) Payment terms — amounts, timing, invoicing requirements, late fees if stated.
+(5) Intellectual property — who owns what is created or licensed under this agreement.
+(6) Confidentiality — whether there is an NDA component, duration, and carve-outs.
+(7) Termination rights — under what conditions either party can terminate early and what notice is required.
+(8) Limitation of liability — whether there is a cap, what is excluded, and what the cap amount or formula is if stated.
+(9) Governing law and dispute resolution — jurisdiction, choice of law, and any arbitration or mandatory venue clause.
+(10) Unusual or notable provisions — anything that is non-standard or that you would flag for attorney attention. If nothing is unusual, say so explicitly.
+
+Do not interpret or evaluate the terms — summarize factually. Use [SECTION X] references to the contract where applicable.
+
+Contract text: [paste contract here]
+Contract type (if known): [e.g., SaaS subscription, commercial lease, independent contractor agreement]</div>
+
+    <p><strong>What to do with the output:</strong> The summary is not a legal opinion — it is a reference document. Use it to prepare for a client call, as the basis for your advice memo, or to brief a colleague who is joining a negotiation. Spot-check the model's extraction against the actual sections it cited before using the summary with the client.</p>
+
+    <h2>2. Red Flag Identification</h2>
+
+    <p><strong>The problem it solves:</strong> Identifying non-standard or high-risk clauses requires reading the document actively, not just parsing it. A limitation of liability clause that excludes the vendor's gross negligence reads like boilerplate until you notice it. This prompt runs the document through a structured risk lens and surfaces the clauses worth your time — so you read the whole contract with that list in front of you rather than discovering the red flags on the third pass.</p>
+
+    <div class="time-badge">Saves ~30 min per review session</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a contract risk analysis assistant helping a transactional attorney identify high-risk and non-standard clauses. Analyze the contract I provide and return a flagged list in this format:
+
+For each issue found:
+- CLAUSE: [Section number and clause name]
+- ISSUE: [One sentence describing what the clause says that is unusual or risky]
+- RISK LEVEL: [High / Medium / Low]
+- REASON: [One to two sentences explaining why this is a concern — what could go wrong for my client]
+- STANDARD ALTERNATIVE: [What market-standard language on this point typically looks like, in one sentence]
+
+Focus on these issue categories:
+— Unlimited or uncapped liability exposure for my client
+— Indemnification obligations that are broader than standard
+— IP assignment clauses that capture more than what was intended
+— Auto-renewal or evergreen provisions without adequate notice periods
+— Termination for convenience that is one-sided
+— Unilateral amendment rights that favor the other party
+— Governing law or jurisdiction that is unfavorable
+— Force majeure exclusions that remove events my client would expect to be covered
+— Payment terms that are unusually short or penalties that are disproportionate
+— Any clause that appears to waive rights my client should retain
+
+If a clause is standard and presents no unusual risk, do not list it. Only flag what is actually non-standard or concerning.
+
+My client's role in this agreement: [Vendor / Customer / Licensor / Licensee / Employer / other]
+Contract text: [paste contract]</div>
+
+    <p><strong>After the flag list:</strong> The model will sometimes flag clauses that are non-standard but negotiated and acceptable given the deal context. Your job is to triage the list — not every flag becomes a redline. The risk level ratings are starting points, not conclusions. Work through each flag against what you know about the client's priorities and leverage before deciding what to push on.</p>
+
+    <h2>3. Negotiation Redline Draft</h2>
+
+    <p><strong>The problem it solves:</strong> Once you have decided what you want to change, drafting the actual redlined language takes time — especially for clauses where the "ask" is nuanced (limit the indemnification scope, add a materiality qualifier, cap the liability). This prompt takes your instructions and produces a first-draft redline set in the format you would use to send to opposing counsel, which you then review and refine.</p>
+
+    <div class="time-badge">Saves ~20 min per redline set</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a contract drafting assistant helping an attorney produce a negotiation redline. I will give you the original clause text and my instructions for how I want it changed. For each clause, produce:
+
+(1) ORIGINAL: [The clause as written — copy exactly]
+(2) REDLINED: [The revised version — use [STRIKETHROUGH: deleted text] for deletions and [ADDED: new text] to show additions. If the whole clause is being replaced, label it REPLACED VERSION.]
+(3) COMMENT (optional): [One sentence explaining the redline if it is non-obvious — for use in a cover note or negotiation memo]
+
+Instructions:
+- Only change what I instruct. Do not improve or optimize clauses I have not flagged.
+- If my instruction is ambiguous, ask for clarification rather than guessing.
+- If the change I am requesting creates an internal inconsistency with another clause I mention, flag it with [CONSISTENCY NOTE].
+- Maintain the contract's defined terms — do not substitute synonyms for defined terms.
+
+Original clause(s) and my redline instructions:
+[For each clause, paste: CLAUSE (section number + text) / INSTRUCTION (what I want changed and why)]
+
+My client is the: [Vendor / Customer / Licensor / other]
+Governing law: [state/jurisdiction, if relevant to drafting conventions]</div>
+
+    <p><strong>How to use the output:</strong> The redline draft goes to you first, not opposing counsel. Read each redline against the original clause and confirm it accurately reflects what you intended. The [CONSISTENCY NOTE] flags are particularly important — a change to one clause sometimes conflicts with a defined term or a cross-referenced provision you did not notice. Check those first.</p>
+
+    <h2>4. Indemnification and Liability Analysis</h2>
+
+    <p><strong>The problem it solves:</strong> Indemnification provisions are the clauses that most often produce disputes long after the contract is signed, because their implications are not felt until something goes wrong. Reading an indemnification clause and understanding who is actually exposed — and to what — requires parsing dense, heavily qualified language that does not lend itself to quick reading. This prompt does the parsing and produces a liability map.</p>
+
+    <div class="time-badge">Saves ~20 min per liability analysis</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a contract analysis assistant helping an attorney understand the indemnification and liability framework in a contract. Analyze the indemnification, limitation of liability, and warranty sections and produce:
+
+(1) WHO INDEMNIFIES WHOM — for each indemnification obligation, state: indemnifying party → indemnified party, and the trigger events (what must happen to trigger the obligation).
+
+(2) SCOPE OF INDEMNIFICATION — for each obligation: what losses are covered (third-party claims / direct damages / consequential damages / costs and attorneys' fees), and what is excluded.
+
+(3) LIABILITY CAP — state the cap amount or formula, which party it applies to, and what categories of damages are excluded from the cap (typically gross negligence, willful misconduct, IP indemnity, data breaches, and confidentiality breaches — note whether these carve-outs are present or absent).
+
+(4) CONSEQUENTIAL DAMAGES WAIVER — whether there is a mutual or one-sided waiver of consequential, indirect, or punitive damages, and any carve-outs.
+
+(5) RISK SUMMARY — one paragraph describing, in plain English, which party is carrying more risk under this framework and what the key exposure is. Flag if the liability structure is unusually one-sided.
+
+Do not evaluate whether the structure is acceptable — summarize what the contract actually says. I will make the judgment call.
+
+My client's role: [Vendor / Customer / Licensor / other]
+Relevant contract sections: [paste indemnification, limitation of liability, and warranty clauses]</div>
+
+    <p><strong>The value of the risk summary:</strong> The one-paragraph plain-English summary at the end is often more useful in a client conversation than the technical clause-by-clause analysis. A client who hears "you are indemnifying them for any third-party claim arising from your use of the product, with no cap, including claims caused by their own product defects" understands the issue faster than one who reads the clause themselves. Use the summary as the starting point for the client call, then walk through the specifics as needed.</p>
+
+    <h2>5. Client-Facing Contract Explainer</h2>
+
+    <p><strong>The problem it solves:</strong> After you have reviewed and negotiated a contract, the client still needs to understand what they are signing. For non-lawyer clients, a well-drafted contract is still opaque — the defined terms, the cross-references, the legalese. Writing a plain-English summary that is accurate (you can be held responsible for what you tell the client), readable (the client will actually read it), and appropriately hedged (you are explaining the contract, not giving business advice on whether to sign it) takes time to get right. This prompt produces the first draft.</p>
+
+    <div class="time-badge">Saves ~20 min per client summary</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a legal communication assistant helping an attorney write a plain-English contract summary for a non-lawyer client. The client is about to sign this agreement and needs to understand what they are committing to before signing.
+
+Write a client-facing summary with these sections:
+
+(1) WHAT THIS CONTRACT IS — one sentence describing the agreement type and what transaction it covers.
+
+(2) WHAT YOU ARE AGREEING TO DO — bullet list of the client's core obligations. Plain English, no jargon. If there are deadlines or performance standards, include them.
+
+(3) WHAT THE OTHER SIDE IS AGREEING TO DO — bullet list of the other party's core obligations.
+
+(4) MONEY — what the client pays (or receives), when, and what happens if payment is late.
+
+(5) HOW LONG IT LASTS — the term, renewal terms, and what happens at expiration.
+
+(6) HOW EITHER SIDE CAN EXIT EARLY — termination rights in plain English. Note which rights require notice and which can be immediate.
+
+(7) WHAT HAPPENS IF SOMETHING GOES WRONG — one paragraph on the key risk provisions: indemnification in plain terms, liability cap if any, what the client can and cannot sue for.
+
+(8) IMPORTANT THINGS TO ASK ABOUT — list any provisions I flag below as requiring the client's attention or decision before signing.
+
+Tone: plain English, no Latin, no unnecessary legal hedging. Write as if explaining to a smart non-lawyer. Do not provide a recommendation on whether to sign — that is the attorney's role.
+
+My client's role: [Vendor / Customer / Licensor / other]
+Items to flag for client attention: [list any provisions you want the client to pay particular attention to]
+Contract terms summary (from the key-terms summary above or paste key sections): [paste relevant terms or prior summary output]</div>
+
+    <h2>How to Chain These Prompts Together</h2>
+
+    <p>The most efficient workflow is sequential: run the key terms summary first (Prompt 1) to orient yourself, then the red flag identification (Prompt 2) to know what to focus on. Use the flag list to decide which clauses need a redline (Prompt 3) and which need deeper analysis (Prompt 4 for indemnification). Once negotiations are done, produce the client explainer (Prompt 5) using the final agreed terms.</p>
+
+    <p>Run this workflow on a standard commercial agreement and the elapsed time from "received document" to "ready to call the client" drops from 90 minutes to 30 to 40 minutes. The savings compound — if you review twenty contracts a month, that is ten to twelve hours of billable time recovered.</p>
+
+    <p>These five cover contract review. The complete guide includes prompts for demand letters, motion practice, deposition preparation, client status updates, settlement communications, and the full range of recurring drafting tasks across practice areas.</p>
+
+    <div class="cta-box">
+      <h3>The Complete AI Prompt Library for Attorneys</h3>
+      <p>These five cover contract review. The full guide has 40+ prompts spanning the entire matter lifecycle — intake, drafting, negotiation, client communication, and close-out — written specifically for solo and small-firm practitioners who cannot afford to spend billable time on first-draft work.</p>
+      <a class="cta-btn" href="https://szeller.gumroad.com/l/ailawyers" target="_blank" rel="noopener">Get AI for Lawyers &rarr; $29</a>
+      <p class="cta-note">One-time purchase. Instant download. 30-day money-back guarantee.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 sz.dev &mdash; <a href="/">Home</a> &middot; <a href="/#guides">Guides</a> &middot; <a href="mailto:szeller@blackberg.com">Contact</a></p>
+</footer>
+
+</body>
+</html>

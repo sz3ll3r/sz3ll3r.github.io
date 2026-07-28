@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="3 copy-paste AI prompts CPAs and bookkeepers use to clean up uncategorized transactions, prep year-end adjusting entries, and write client communications about missing documentation — fast.">
+<title>AI Prompts for Accountants: Bookkeeping Cleanup and Year-End Close | sz.dev</title>
+<meta property="og:title" content="AI Prompts for Accountants: Bookkeeping Cleanup and Year-End Close">
+<meta property="og:description" content="Messy books and year-end close pile up the same way every time. These AI prompts handle the categorization logic, adjusting entry prep, and client follow-up writing that slow you down most.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sz3ll3r.github.io/blog/ai-bookkeeping-cleanup-for-accountants.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-bookkeeping-cleanup-for-accountants.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0c10;--bg2:#0f1218;--bg3:#141a22;
+  --gold:#d4af37;--steel:#64748b;--amber:#f59e0b;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1e2535;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,12,16,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:#0a0c10!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--gold);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#0d0a04;border:1px solid rgba(212,175,55,.2);border-left:3px solid var(--gold);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--gold)}
+.prompt-box{background:#0d0a04;border:1px solid rgba(212,175,55,.18);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#f0d060;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:10px;display:block}
+.time-badge{display:inline-block;background:#0d0a04;border:1px solid rgba(212,175,55,.3);color:var(--gold);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:6px;margin:10px 0 22px}
+.cta-box{background:linear-gradient(135deg,#0d0a04 0%,#0a0c10 100%);border:1px solid rgba(212,175,55,.3);border-radius:14px;padding:36px 32px;margin:60px 0 20px;text-align:center}
+.cta-box h3{color:var(--text);font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:480px;margin:0 auto 24px;font-size:.95rem;line-height:1.7}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--amber));color:#0a0c10;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:-.01em;transition:opacity .2s}
+.cta-btn:hover{opacity:.9;text-decoration:none;color:#0a0c10}
+.cta-note{font-size:.8rem;color:var(--dim);margin-top:14px}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24px;text-align:center;color:var(--dim);font-size:.85rem;margin-top:80px}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--gold)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .article-wrap{padding:90px 18px 60px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">sz<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="/#guides">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a class="nav-cta" href="https://szeller.gumroad.com/l/aiaccountants" target="_blank" rel="noopener">Get the Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span>
+    <a href="/#blog">Blog</a><span>&rsaquo;</span>
+    AI Prompts for Accountants
+  </div>
+
+  <div class="article-cat">Accounting Practice &middot; AI Tools</div>
+
+  <h1>AI Prompts for Accountants: Bookkeeping Cleanup and Year-End Close</h1>
+
+  <div class="article-meta">
+    <span>July 2026</span>
+    <span>9 min read</span>
+    <span>Copy-paste ready</span>
+  </div>
+
+  <div class="article-body">
+
+    <p><em>Bookkeeping cleanup and year-end close create the same bottlenecks at every firm: uncategorized transactions, unanswered client requests, and adjusting entries that have to be reasoned through from scratch. These four prompts handle the decision support and communication drafting so you can focus on the judgment calls.</em></p>
+
+    <p>The rhythm of accounting practice has predictable pressure points. At year-end, they all arrive at once: the client's books are a mess, the uncategorized transaction list is long, the adjusting entries need to be identified and documented, and the client has not responded to three follow-up emails about the receipts you requested in October. None of this is conceptually difficult. All of it takes time that compounds across a client roster of twenty or thirty small businesses.</p>
+
+    <p>The bottleneck is not analytical. You know how to categorize a transaction, identify an accrual, and write a client email. The bottleneck is the volume of mechanical decision-making and communication drafting that has to happen before the actual accounting judgment work can proceed. A pile of 200 uncategorized transactions is not a hard problem — it is a time-consuming one. A client communication requesting missing information is not hard to write — it is a task that gets deprioritized when you are also trying to close three other sets of books.</p>
+
+    <p>The four prompts below address exactly these bottlenecks. They are built for bookkeepers, CPAs, and accounting staff who work with small business clients in any industry and need to move faster through the mechanical layer of year-end close without compromising the quality of the work.</p>
+
+    <div class="callout">
+      <p><strong>How to use these prompts:</strong> Copy the prompt, paste it into ChatGPT, Claude, or your preferred AI tool, and replace the bracketed [PLACEHOLDER] fields with your actual data. Review all AI output before applying it to client records. These prompts produce recommendations, not final entries — you make the final call.</p>
+    </div>
+
+    <h2>1. Categorizing Uncategorized Transactions</h2>
+
+    <p><strong>The problem it solves:</strong> A list of uncategorized transactions is one of the most time-consuming cleanup tasks in bookkeeping — not because any individual categorization decision is hard, but because there are hundreds of them and each one requires reading the description, inferring the nature of the transaction, and mapping it to the right chart of accounts category. This prompt takes a batch of uncategorized transactions and returns a recommended category for each, with a confidence level and the reasoning behind the recommendation, so you can review and confirm rather than decide from scratch every time.</p>
+
+    <div class="time-badge">Saves ~45 min per 100 uncategorized transactions</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a bookkeeping assistant helping a CPA or bookkeeper categorize uncategorized transactions for a small business client. I will provide a list of transactions with their date, amount, and bank description. For each transaction, recommend the most likely Chart of Accounts category.
+
+Return your analysis in a table with these columns:
+| Date | Amount | Bank Description | Recommended Category | Confidence | Reasoning |
+
+Confidence levels:
+- HIGH: The description clearly indicates a specific expense or income type
+- MEDIUM: The description is consistent with a likely category but could have multiple valid interpretations
+- LOW: The description is ambiguous and the category should be confirmed with the client or a receipt
+
+Rules for your recommendations:
+- Use standard small business Chart of Accounts categories (e.g., Office Supplies, Meals & Entertainment, Professional Services, Advertising & Marketing, Software & Subscriptions, Payroll Expense, Rent, Utilities, Cost of Goods Sold, Owner's Draw, etc.)
+- If a transaction is likely a bank fee, merchant fee, or payment processor fee, categorize it specifically (e.g., Bank Service Charges, Merchant Fees)
+- Flag any transaction that might be a loan repayment, owner contribution, or transfer between accounts — these are not expenses and need special handling
+- If a transaction appears to be a duplicate (same date, amount, and description as another in the list), flag it with [POSSIBLE DUPLICATE]
+- At the end of the table, list all LOW confidence items in a section called "Items Requiring Client Confirmation" with a suggested question to ask the client for each
+
+Business type: [e.g., retail, consulting, restaurant, construction, healthcare practice]
+Accounting method: [Cash / Accrual]
+Fiscal year end: [Date]
+
+Transaction list:
+[PASTE TRANSACTIONS — one per line, format: Date | Amount | Bank Description]</div>
+
+    <p><strong>How to use the output:</strong> The table gives you a review interface rather than a starting-from-scratch task. Work through it top to bottom: confirm HIGH confidence items quickly, review MEDIUM confidence items against any receipts or prior period categorizations for this vendor, and flag LOW confidence items for client follow-up. The "Items Requiring Client Confirmation" section at the bottom becomes your follow-up list, which feeds directly into Prompt 3 (client communication drafting) below.</p>
+
+    <h2>2. Year-End Adjusting Entries Preparation</h2>
+
+    <p><strong>The problem it solves:</strong> Identifying which adjusting entries are needed at year-end requires reasoning through the trial balance against what you know about the client's business — what prepaid expenses have been used up, what accruals are missing, whether depreciation is current, whether there are unearned revenues that need to be recognized. This reasoning is repeatable but requires thinking through each category systematically. This prompt takes the trial balance and business context and produces a structured checklist of adjusting entries to consider, with the journal entry format for each.</p>
+
+    <div class="time-badge">Saves ~35 min per client year-end review</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a CPA-level accounting assistant helping prepare year-end adjusting entries for a small business client. Based on the trial balance and business information I provide, identify the adjusting entries that are likely needed and produce a preparation checklist.
+
+For each potential adjusting entry:
+- ENTRY TYPE: [e.g., Accrued Expense, Prepaid Expense Amortization, Deferred Revenue, Depreciation, Inventory Adjustment, Bad Debt Expense, Payroll Accrual]
+- ACCOUNTS AFFECTED: [Debit account / Credit account]
+- ESTIMATED AMOUNT OR FORMULA: [If calculable from the information I provide; otherwise write "Requires confirmation — see question below"]
+- QUESTION TO CONFIRM: [What information is needed to finalize this entry?]
+- PRIORITY: [High (likely required for accurate financials) / Medium (review recommended) / Low (may be immaterial)]
+
+After the checklist, produce a section called INFORMATION NEEDED FROM CLIENT listing all open questions in one consolidated list, grouped by category, suitable for sending to the client as a year-end information request.
+
+Business information:
+- Business type: [e.g., service business, retailer, contractor]
+- Accounting method: [Cash / Accrual]
+- Fiscal year end: [Date]
+- Known fixed assets (for depreciation): [List major assets with acquisition date and cost, or write "See depreciation schedule attached"]
+- Prepaid expenses on books: [List accounts with balances, or write "See trial balance"]
+- Known accruals not yet recorded: [e.g., "December payroll paid January 5", "Annual insurance premium expires March — 3 months unused at year-end"]
+- Unearned revenue or deposits received: [Describe or write "None known"]
+- Inventory method (if applicable): [FIFO / LIFO / Average Cost / N/A]
+
+Trial balance (paste or summarize key account balances):
+[PASTE TRIAL BALANCE OR SUMMARY OF KEY BALANCES]</div>
+
+    <p><strong>After the checklist:</strong> The output is a structured review agenda, not a final set of entries. Work through each HIGH priority item first — these are the entries most likely to materially affect the financial statements. The MEDIUM priority items are candidates for review, not automatic entries; use your judgment about materiality and the client's circumstances. The consolidated information request list feeds directly into Prompt 3.</p>
+
+    <h2>3. Client Communication: Missing Information and Documentation Requests</h2>
+
+    <p><strong>The problem it solves:</strong> Writing a client email requesting missing information, receipts, or responses to open questions is a task that accountants do dozens of times per engagement — and one that often gets delayed because it takes time to write clearly, professionally, and specifically enough to actually get a response. A vague request ("Can you send over the missing receipts?") generates a vague response or no response. A specific, well-organized request gets answered faster. This prompt takes your list of open items and drafts a professional client communication that is specific, appropriately urgent, and easy for a non-accountant client to act on.</p>
+
+    <div class="time-badge">Saves ~15 min per client follow-up email</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a professional communications assistant helping an accountant or CPA write a client email requesting missing information, documentation, or responses to open questions. The email should be professional, clear, and specific enough that the client knows exactly what to provide and by when.
+
+Write the email with these characteristics:
+- Warm but direct opening — acknowledge the client relationship without excessive pleasantries
+- Clear statement of purpose in the first paragraph (why you are writing, what you need, and by when)
+- Numbered list of specific requests — each item should be one concrete action the client can take (provide a document, confirm a fact, answer a specific question)
+- For each item that involves a specific transaction or amount, include that detail so the client knows exactly what you are referring to
+- A specific deadline and a brief explanation of why the deadline matters (e.g., "to meet your filing deadline," "to close out your books before year-end")
+- Professional closing that does not over-apologize for asking but does acknowledge the client's time
+- Subject line suggestion at the top of the draft
+
+Do not use jargon the client may not understand. Write as if the client is a small business owner who is smart but not an accountant.
+
+Client context:
+- Client name / business name: [CLIENT NAME]
+- Relationship context: [e.g., long-term client, new client this year, client who tends to respond slowly]
+- Urgency level: [Routine / Moderate — some deadline pressure / High — deadline within two weeks]
+- Deadline for response: [DATE]
+- Reason for deadline: [e.g., tax filing deadline, year-end close, quarterly review]
+
+Open items requiring client response (list each item specifically):
+[LIST EACH OPEN ITEM — be as specific as possible, e.g., "Receipt for $847 charge at Home Depot on 11/14" or "Confirm whether the $5,000 deposit received 12/1 is for a project that will be completed in the new year"]</div>
+
+    <p><strong>Why specificity matters:</strong> The prompt instructs the model to include specific transaction details, dates, and amounts in each numbered request. This is deliberate — a client who receives an email that says "please provide the receipt for the $847 Home Depot charge on November 14th" knows exactly what to look for. A client who receives "please send missing receipts" does not know which receipts are missing or where to start. The extra 30 seconds of specificity in the prompt input produces a material improvement in client response rate and speed.</p>
+
+    <h2>4. Bank Reconciliation Discrepancy Analysis</h2>
+
+    <p><strong>The problem it solves:</strong> A bank reconciliation that does not balance has to be investigated — the discrepancy has to be tracked down, the source identified, and either a correction made or an explanation documented. Working through a reconciliation discrepancy manually means going line by line through the bank statement and the books looking for timing differences, missing entries, data entry errors, or bank errors. This prompt structures that investigation and gives you a systematic approach to finding the source of the discrepancy based on the information you provide.</p>
+
+    <div class="time-badge">Saves ~20 min per reconciliation investigation</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are an accounting investigation assistant helping a bookkeeper or CPA trace a bank reconciliation discrepancy. Based on the information I provide, help me identify the most likely sources of the difference and the steps to investigate each.
+
+STEP 1 — DISCREPANCY SUMMARY
+Restate the key figures:
+- Book balance at [date]: [AMOUNT]
+- Bank statement balance at [date]: [AMOUNT]
+- Total discrepancy: [AMOUNT]
+
+STEP 2 — COMMON CAUSES CHECKLIST
+For each common cause of bank reconciliation discrepancies, assess whether it is likely given the information I provide and what to check:
+
+1. Outstanding checks (issued but not yet cleared)
+2. Deposits in transit (recorded in books, not yet on bank statement)
+3. Bank charges not recorded in books (fees, NSF charges, interest)
+4. Interest income not recorded in books
+5. Data entry errors (transposed digits, wrong amounts)
+6. Duplicate entries (same transaction recorded twice)
+7. Missing entries (transaction on bank statement with no book entry)
+8. Timing differences from month-end cut-off
+9. Voided checks that still appear on the bank statement
+10. Bank errors
+
+STEP 3 — INVESTIGATION PRIORITY LIST
+Based on the discrepancy amount and the information I provide, list the three most likely causes in order of probability, with specific steps to investigate each.
+
+STEP 4 — CORRECTION JOURNAL ENTRIES
+Once the source is identified, suggest the appropriate correcting journal entry for each common scenario.
+
+Information about the discrepancy:
+- Period being reconciled: [Month/Year]
+- Discrepancy amount: [$AMOUNT — specify whether books are higher or lower than bank]
+- Last reconciliation: [DATE — was it balanced?]
+- Number of transactions in the period (approximate): [NUMBER]
+- Known issues or recent changes: [e.g., "New bookkeeper started in October", "Switched from QuickBooks to Xero in September", "Client had NSF checks this period"]
+- Outstanding items from prior reconciliation that should have cleared: [LIST OR "None known"]</div>
+
+    <p><strong>After the investigation framework:</strong> The prompt gives you a structured investigation plan, not an answer. Work through the priority list in Step 3 first — the most common cause of reconciliation discrepancies is outstanding items (checks or deposits in transit) that were not carried forward correctly from the prior reconciliation. If the prior reconciliation was not balanced, start there before looking for new issues in the current period. The correction journal entries in Step 4 are templates; verify the accounts and amounts before posting.</p>
+
+    <h2>Putting These Prompts into a Year-End Close Workflow</h2>
+
+    <p>A practical sequence for year-end close: start with Prompt 4 (bank reconciliation) to confirm the starting point is clean. Then run Prompt 1 (uncategorized transaction categorization) to clear the backlog before preparing financial statements. Use Prompt 2 (adjusting entries checklist) once the trial balance is clean to identify what still needs to be recorded. As you work through both processes, collect your open questions and use Prompt 3 (client communication) to send a consolidated, specific information request rather than a series of individual emails.</p>
+
+    <p>Across a client roster of 20 small business clients, running this workflow at year-end compresses the total time on bookkeeping cleanup and close preparation by 30 to 40 percent. The accounting judgment — which entries are actually material, what the financial statements mean for the client's business, what to flag in the year-end conversation — still requires your expertise. What changes is how much of your time is available for that work versus the mechanical layer that precedes it.</p>
+
+    <p>The full AI for Accountants guide extends this to tax prep, financial statement review, payroll reconciliation, and the recurring communication and documentation tasks that accountants and bookkeepers deal with across every client engagement — 40+ prompts structured the same way as the ones above.</p>
+
+    <div class="cta-box">
+      <h3>The Complete AI Prompt Library for Accountants</h3>
+      <p>These four prompts cover bookkeeping cleanup and year-end close. The full guide has 40+ prompts across the entire client engagement lifecycle — tax prep, financial review, payroll, client communications, and more — built for CPAs and bookkeepers who work with small business clients.</p>
+      <a class="cta-btn" href="https://szeller.gumroad.com/l/aiaccountants" target="_blank" rel="noopener">Get AI for Accountants &rarr; $29</a>
+      <p class="cta-note">One-time purchase. Instant download. 30-day money-back guarantee.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 sz.dev &mdash; <a href="/">Home</a> &middot; <a href="/#guides">Guides</a> &middot; <a href="mailto:szeller@blackberg.com">Contact</a></p>
+</footer>
+
+</body>
+</html>

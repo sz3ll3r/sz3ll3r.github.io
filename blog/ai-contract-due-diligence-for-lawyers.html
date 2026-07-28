@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="3 copy-paste AI prompts for faster contract clause extraction, due diligence checklist generation, and matter handoff summaries — built for solo practitioners and small law firms.">
+<title>AI Prompts for Lawyers: Faster Contract Review and Due Diligence | sz.dev</title>
+<meta property="og:title" content="AI Prompts for Lawyers: Faster Contract Review and Due Diligence">
+<meta property="og:description" content="Contract review still takes hours at most small firms. These three AI prompts cut the extraction, due diligence, and handoff work down to minutes — without replacing your judgment on the substance.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sz3ll3r.github.io/blog/ai-contract-due-diligence-for-lawyers.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-contract-due-diligence-for-lawyers.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0c10;--bg2:#0f1218;--bg3:#141a22;
+  --gold:#d4af37;--steel:#64748b;--amber:#f59e0b;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1e2535;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,12,16,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:#0a0c10!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--gold);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#0d0a04;border:1px solid rgba(212,175,55,.2);border-left:3px solid var(--gold);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--gold)}
+.prompt-box{background:#0d0a04;border:1px solid rgba(212,175,55,.18);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#f0d060;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:10px;display:block}
+.time-badge{display:inline-block;background:#0d0a04;border:1px solid rgba(212,175,55,.3);color:var(--gold);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:6px;margin:10px 0 22px}
+.cta-box{background:linear-gradient(135deg,#0d0a04 0%,#0a0c10 100%);border:1px solid rgba(212,175,55,.3);border-radius:14px;padding:36px 32px;margin:60px 0 20px;text-align:center}
+.cta-box h3{color:var(--text);font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:480px;margin:0 auto 24px;font-size:.95rem;line-height:1.7}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--amber));color:#0a0c10;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:-.01em;transition:opacity .2s}
+.cta-btn:hover{opacity:.9;text-decoration:none;color:#0a0c10}
+.cta-note{font-size:.8rem;color:var(--dim);margin-top:14px}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24px;text-align:center;color:var(--dim);font-size:.85rem;margin-top:80px}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--gold)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .article-wrap{padding:90px 18px 60px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">sz<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="/#guides">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a class="nav-cta" href="https://szeller.gumroad.com/l/ailawyers" target="_blank" rel="noopener">Get the Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span>
+    <a href="/#blog">Blog</a><span>&rsaquo;</span>
+    AI Prompts for Lawyers
+  </div>
+
+  <div class="article-cat">Legal Practice &middot; AI Tools</div>
+
+  <h1>AI Prompts for Lawyers: Faster Contract Review and Due Diligence</h1>
+
+  <div class="article-meta">
+    <span>July 2026</span>
+    <span>9 min read</span>
+    <span>Copy-paste ready</span>
+  </div>
+
+  <div class="article-body">
+
+    <p><em>Contract review and due diligence are where solo practitioners and small firm attorneys lose the most recoverable time. These three prompts compress the mechanical work — extraction, checklisting, and handoffs — without touching the judgment calls that actually require a lawyer.</em></p>
+
+    <p>A realistic contract review workflow at a solo practice looks like this: a new matter lands in your inbox, the agreement is 30 to 60 pages, and before you can advise the client on a single substantive issue you have to orient yourself in the document. What does it actually say? What are the key terms? Where are the high-risk provisions? That orientation work — necessary, repetitive, and entirely mechanical — can consume two to three hours on a complex transaction before you have made a single judgment call.</p>
+
+    <p>Due diligence has the same problem at a larger scale. You are not reviewing one document; you are reviewing a data room. The checklist of what to look for exists in your head, or in a template you update deal by deal. Generating the right checklist for a specific transaction type — M&amp;A, commercial real estate, SaaS licensing, venture financing — and mapping it to what is actually present in the data room takes time that compounds across every matter.</p>
+
+    <p>The prompts below are designed to compress both problems. They handle the mechanical layer: extracting what a contract says, generating a due diligence checklist matched to the deal type, and producing a clean matter summary when a file needs to be handed off to a colleague or to a client. What they do not handle — and cannot handle — is the judgment layer: whether a particular risk level is acceptable, how to position a negotiation, what advice to give. That part remains yours.</p>
+
+    <div class="callout">
+      <p><strong>How to use these prompts:</strong> Copy the prompt, paste it into ChatGPT, Claude, or your preferred AI tool, and replace the bracketed [PLACEHOLDER] fields with your actual content. Always verify AI output against the source documents before using it with a client or in a filing.</p>
+    </div>
+
+    <h2>1. Contract Clause Extraction and Red-Flag Spotting</h2>
+
+    <p><strong>The problem it solves:</strong> Reading a contract to understand what it actually says requires two passes: a structural pass to identify what provisions exist and where they sit, and an analytical pass to flag what is non-standard or high-risk. Most attorneys do both simultaneously, which is why contract review takes as long as it does. This prompt separates the two passes into a single AI run — it extracts the key clause content and flags the risks at the same time, so you walk into your substantive review already knowing what deserves your attention.</p>
+
+    <div class="time-badge">Saves ~40 min per new contract orientation</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a contract analysis assistant. I am going to paste a contract below. Run two analyses simultaneously and return the results in this format:
+
+PART 1 — KEY CLAUSE EXTRACTION
+
+For each of the following provision types, extract the exact language (abbreviated if very long) and the section number where it appears. If a provision type is absent from the contract, say "Not present."
+
+- Parties and roles
+- Effective date and term
+- Payment obligations and timing
+- Delivery or performance obligations
+- Intellectual property ownership and license grants
+- Confidentiality and non-disclosure
+- Representations and warranties (list by party)
+- Indemnification (list by party)
+- Limitation of liability and liability cap
+- Termination rights (for cause and for convenience)
+- Governing law and dispute resolution
+- Assignment restrictions
+- Change-of-control provisions
+
+PART 2 — RED-FLAG SUMMARY
+
+After extracting the provisions above, identify clauses that are non-standard, one-sided, or present unusual risk. For each red flag:
+
+FLAG: [Section number and clause type]
+ISSUE: [One sentence — what does this clause say that is unusual?]
+RISK: [High / Medium / Low]
+WHY IT MATTERS: [One sentence — what could go wrong for my client?]
+
+Do not flag provisions that are standard for this contract type. Only flag what is genuinely non-standard or concerning.
+
+My client's position in this agreement: [Vendor / Customer / Licensor / Buyer / Seller / other]
+Contract type (if known): [e.g., SaaS subscription, commercial lease, asset purchase agreement]
+
+Contract text:
+[PASTE CONTRACT HERE]</div>
+
+    <p><strong>What to do with the output:</strong> The extraction in Part 1 gives you a one-page orientation to the document. Use it as your working reference during the client call and as the basis for your advice memo. Part 2 gives you the review agenda — the provisions that need a closer look and potentially a redline. Not every flag becomes a negotiation point; your job is to triage the list against the client's priorities and deal leverage. But having the list at the start of your review, rather than discovering issues on the third read, is what compresses the time.</p>
+
+    <h2>2. Due Diligence Checklist Generation</h2>
+
+    <p><strong>The problem it solves:</strong> A due diligence checklist that is calibrated to the specific transaction type — its deal structure, industry, size, and key risk areas — is more useful than a generic one. Most attorneys maintain a master template and adapt it deal by deal, which means they are doing the adaptation work manually every time. This prompt generates a deal-specific checklist from a brief description of the transaction, organized by category, with the highest-priority items surfaced first.</p>
+
+    <div class="time-badge">Saves ~30 min per new matter setup</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a legal due diligence specialist. Based on the transaction description I provide, generate a structured due diligence checklist organized by category. For each item, include:
+
+- ITEM: [Specific document or information to request]
+- PRIORITY: [High / Medium / Low — based on typical deal risk in this transaction type]
+- PURPOSE: [One sentence — why this item matters for this specific deal]
+
+Organize the checklist into these categories (include only categories relevant to this transaction type):
+
+1. Corporate / Organizational Documents
+2. Capitalization and Equity
+3. Financial Statements and Projections
+4. Material Contracts
+5. Intellectual Property
+6. Regulatory and Compliance
+7. Employment and Benefits
+8. Litigation and Disputes
+9. Real Property and Leases
+10. Tax
+11. Environmental (if applicable)
+12. Technology and Data Privacy (if applicable)
+13. Customer and Vendor Concentration (if applicable)
+
+After the checklist, add a section titled DEAL-SPECIFIC RISKS listing the three to five highest-priority risk areas I should focus on given the transaction description, with one paragraph of explanation for each.
+
+Transaction description:
+- Deal type: [e.g., acquisition of all assets, majority equity investment, commercial lease, software licensing deal]
+- Industry: [e.g., SaaS, healthcare, manufacturing, professional services]
+- Deal size (approximate): [e.g., $2M, $15M, undisclosed]
+- My client's role: [Buyer / Investor / Landlord / Tenant / Licensor / Licensee]
+- Known issues or concerns: [List any specific concerns you already have, or write "None identified yet"]
+- Jurisdiction: [State/country]</div>
+
+    <p><strong>How to use this in practice:</strong> Run this prompt at matter intake, before you have seen any data room documents. The output gives you the checklist to send to opposing counsel as your document request list, and the deal-specific risks section tells you where to concentrate your review time once documents start coming in. As you receive documents and identify gaps, you can re-run the prompt with the "known issues" field updated to generate a follow-up request list focused on what is missing.</p>
+
+    <h2>3. Client Matter Summary for Handoffs</h2>
+
+    <p><strong>The problem it solves:</strong> When a matter needs to be handed off — to a colleague covering while you are out, to a new attorney taking over the file, or to the client as a status update — you need a clean, accurate summary of where things stand. Writing that summary from scratch takes longer than it should, because it requires pulling from multiple sources: the contract, your notes, the correspondence, the open items list. This prompt takes a brief structured input and produces a handoff summary that a new reader can orient from in five minutes.</p>
+
+    <div class="time-badge">Saves ~20 min per handoff or status memo</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a legal matter management assistant. Based on the information I provide below, produce a professional matter summary suitable for a colleague handoff or a client status memo. The summary should allow a reader with no prior familiarity with the matter to understand the situation, the current status, and the open action items within five minutes of reading.
+
+Structure the summary as follows:
+
+MATTER OVERVIEW
+- Client: [name]
+- Matter type: [e.g., commercial contract negotiation, M&A due diligence, real estate transaction]
+- Counterparty: [name and role]
+- Matter opened: [date]
+- Governing documents: [list the key contracts or filings involved]
+
+CURRENT STATUS (one paragraph, factual and specific — where does this matter stand as of today?)
+
+KEY TERMS AGREED (for transactional matters — bullet list of material deal points that are locked)
+
+OPEN ISSUES (bullet list of what is still being negotiated, drafted, or reviewed — each item should include what is needed and from whom)
+
+PENDING DEADLINES (list any upcoming deadlines, filing dates, or response deadlines with specific dates)
+
+NEXT STEPS (bullet list of the specific actions required to move the matter forward, in priority order, with the responsible party noted for each)
+
+CONTEXT FOR NEW ATTORNEY (two to three sentences of background that is not captured in the documents — client sensitivities, negotiation history, relationship dynamics, or anything a new reader would need to know that is not in the file)
+
+Input — provide as much of the following as you have:
+- Brief description of the matter: [DESCRIBE MATTER]
+- Key dates and deadlines: [LIST DATES]
+- Status of negotiations or review: [DESCRIBE WHERE THINGS STAND]
+- Open issues: [LIST OPEN ITEMS]
+- Client sensitivities or context: [ANY RELEVANT BACKGROUND]</div>
+
+    <p><strong>The format is intentional:</strong> The "Context for New Attorney" section is the one that typically gets omitted from written handoffs, because it captures things that feel informal — the fact that the client is under pressure from a board deadline, or that the counterparty's counsel has a history of moving goalposts in the final week. Including it in the structured format makes it less likely to be skipped. A colleague who inherits a file with that context handled well is a colleague who does not call you on vacation to ask why the client seems stressed about a timeline that looked fine on paper.</p>
+
+    <h2>4. Document Request List for Discovery or Data Room Review</h2>
+
+    <p><strong>The problem it solves:</strong> Whether you are running civil discovery or requesting documents in a deal data room, the initial document request list sets the scope of what you will be working from. A request that is too narrow misses critical documents; a request that is too broad generates volume you cannot practically review. This prompt generates a targeted request list based on the matter type and the specific claims or deal issues in play.</p>
+
+    <div class="time-badge">Saves ~25 min per document request drafting</div>
+
+    <span class="prompt-label">Copy-paste prompt</span>
+    <div class="prompt-box">You are a legal document request specialist. Based on the matter description I provide, generate a structured document request list. For each request:
+
+- REQUEST: [Specific category or type of document to request — use plain language, not discovery boilerplate]
+- SCOPE: [Date range, parties, or other limiting parameters that make this request proportionate]
+- RELEVANCE: [One sentence — why this category of documents is relevant to the matter]
+- PRIORITY: [High / Medium / Low]
+
+After the request list, add:
+
+REQUESTS TO PRIORITIZE FOR EARLY REVIEW: [List the five highest-priority requests and explain in one sentence each why early receipt is important]
+
+DOCUMENTS TO REQUEST NATIVELY (in original electronic format): [List any document types where metadata or native format matters — emails, financial models, communications]
+
+Matter description:
+- Matter type: [e.g., commercial contract dispute, employment claim, real estate acquisition, IP licensing deal]
+- Claims or deal issues: [Describe the core legal issues, claims, or deal risks that drive the document needs]
+- Relevant time period: [Date range for the underlying events]
+- Key parties: [Who are the relevant actors whose documents you need?]
+- Jurisdiction and forum: [Court, arbitration panel, or deal context]
+- Known documents already in hand: [List any documents you already have, to avoid redundant requests]</div>
+
+    <p><strong>After you generate the list:</strong> Run the output through your own knowledge of the matter before sending it. A generated request list will be comprehensive for the matter type it is calibrated to — but it will not know about the specific facts that make certain requests more or less important in your particular case. Use the output as a first draft, annotate it with your case-specific knowledge, and then review it against what you already know about the opposing party's likely objections before it goes out.</p>
+
+    <h2>How These Prompts Fit into a Transactional Workflow</h2>
+
+    <p>For a typical commercial contract negotiation: run Prompt 1 (clause extraction and red flags) when the first draft arrives. If the deal involves due diligence on the counterparty, run Prompt 2 (due diligence checklist) at intake to set your document request scope. Run Prompt 4 (document request list) to generate the actual request to send. When the matter closes or transfers, run Prompt 3 (matter summary) to document the handoff.</p>
+
+    <p>These four prompts together compress the orientation, organization, and documentation work that typically accounts for 30 to 40 percent of time on a transactional file. The legal judgment — what the risks mean for the client, how to advise, how to negotiate — stays with you. What changes is how much of your time is available for that judgment work versus the mechanical layer underneath it.</p>
+
+    <p>The complete AI for Lawyers guide extends this framework to litigation, client intake, demand letters, motion drafting support, and the full range of recurring tasks across practice areas — 40+ prompts with the same structure as above, built specifically for solo and small-firm practice.</p>
+
+    <div class="cta-box">
+      <h3>The Complete AI Prompt Library for Attorneys</h3>
+      <p>These four prompts cover contract review and due diligence. The full guide has 40+ prompts across the entire matter lifecycle — intake, drafting, negotiation, client communication, and close-out — written for solo and small-firm practitioners who cannot afford to spend billable time on first-draft work.</p>
+      <a class="cta-btn" href="https://szeller.gumroad.com/l/ailawyers" target="_blank" rel="noopener">Get AI for Lawyers &rarr; $29</a>
+      <p class="cta-note">One-time purchase. Instant download. 30-day money-back guarantee.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 sz.dev &mdash; <a href="/">Home</a> &middot; <a href="/#guides">Guides</a> &middot; <a href="mailto:szeller@blackberg.com">Contact</a></p>
+</footer>
+
+</body>
+</html>

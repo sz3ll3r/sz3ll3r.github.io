@@ -68,7 +68,13 @@
   </url>
   <url>
     <loc>https://sz3ll3r.github.io/blog/ai-contract-review-for-lawyers.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sz3ll3r.github.io/blog/ai-contract-due-diligence-for-lawyers.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -86,7 +92,13 @@
   </url>
   <url>
     <loc>https://sz3ll3r.github.io/blog/ai-monthly-reporting-for-accountants.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sz3ll3r.github.io/blog/ai-bookkeeping-cleanup-for-accountants.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

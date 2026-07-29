@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="4 copy-paste AI prompts for property managers to handle rental application follow-ups, tenant screening, reference checks, and application decisions — fast and consistent every time.">
+<title>AI Prompts for Tenant Screening and Rental Applications | Property Managers | sz.dev</title>
+<meta property="og:title" content="4 AI Prompts That Make Tenant Screening Faster and More Consistent">
+<meta property="og:description" content="Application follow-ups, employment verification requests, reference checks, and decision letters — all as copy-paste prompts for property managers.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sz3ll3r.github.io/blog/ai-property-tenant-screening.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-property-tenant-screening.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0c0906;--bg2:#110d09;--bg3:#15100b;
+  --amber:#f59e0b;--teal:#14b8a6;--gold:#f59e0b;
+  --sky:#38bdf8;--mint:#34d399;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#2a1f12;
+  --accent:#f59e0b;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(12,9,6,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--amber)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--amber)}
+.nav-cta{background:var(--amber);color:#0c0906!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--amber)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--amber);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--amber);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#100c06;border:1px solid rgba(245,158,11,.2);border-left:3px solid var(--amber);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--amber)}
+.prompt-box{background:#0a0806;border:1px solid rgba(245,158,11,.18);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#fcd34d;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--amber);margin-bottom:10px;display:block}
+.time-badge{display:inline-block;background:#100c06;border:1px solid rgba(20,184,166,.3);color:var(--teal);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:6px;margin:10px 0 22px}
+.cta-box{background:linear-gradient(135deg,#0e0a05 0%,#0c0906 100%);border:1px solid rgba(245,158,11,.3);border-radius:14px;padding:36px 32px;margin:60px 0 20px;text-align:center}
+.cta-box h3{color:var(--text);font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:480px;margin:0 auto 24px;font-size:.95rem;line-height:1.7}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,var(--amber),var(--teal));color:#0c0906;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:-.01em;transition:opacity .2s}
+.cta-btn:hover{opacity:.9;text-decoration:none;color:#0c0906}
+.cta-note{font-size:.8rem;color:var(--dim);margin-top:14px}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24px;text-align:center;color:var(--dim);font-size:.85rem;margin-top:80px}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--amber)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .article-wrap{padding:90px 18px 60px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">sz<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="/#guides">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a href="https://szeller.gumroad.com/l/owfbu" class="nav-cta">Get the Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>›</span>
+    <a href="/#blog">Blog</a><span>›</span>
+    AI Prompts for Tenant Screening
+  </div>
+
+  <div class="article-cat">Property Management · AI Productivity</div>
+  <h1>4 AI Prompts That Make Tenant Screening Faster and More Consistent</h1>
+  <div class="article-meta">
+    <span>July 29, 2026</span>
+    <span>6 min read</span>
+    <span>Property Managers &amp; Landlords</span>
+  </div>
+
+  <div class="article-body">
+
+    <p>Tenant screening is where bad decisions get made — not because landlords and property managers are careless, but because the process is under-documented. Application follow-ups go out in different tones from different coordinators. Reference checks ask different questions depending on who makes the call. Approval and denial letters vary by mood and time pressure.</p>
+
+    <p>These four prompts standardize the screening workflow from application receipt to decision letter. Each one works in ChatGPT, Claude, or Gemini. Fill in the brackets, copy the output, and review it before sending.</p>
+
+    <div class="callout">
+      <p><strong>Fair Housing reminder:</strong> Tenant screening criteria must be applied consistently to all applicants. These prompts produce template language — your underlying screening criteria (income requirements, credit thresholds, prior eviction policy) must comply with federal Fair Housing Act requirements and any applicable state and local regulations. If you're unsure whether your criteria are compliant, consult a real estate attorney in your jurisdiction before applying them.</p>
+    </div>
+
+    <h2>Prompt 1 — Rental Application Acknowledgment and Next Steps</h2>
+    <p>Applicants who don't hear anything for several days after submitting an application often apply elsewhere — or assume they were rejected. A quick, professional acknowledgment sets expectations, reduces follow-up calls, and makes your operation look organized. This prompt generates that message in under a minute.</p>
+
+    <span class="time-badge">Saves 10 min per application received</span>
+
+    <span class="prompt-label">Copy this prompt into ChatGPT, Claude, or Gemini</span>
+    <div class="prompt-box">Write a professional rental application acknowledgment email for the following situation. Property management company or landlord name: [NAME]. Property address: [FULL ADDRESS INCLUDING UNIT NUMBER]. Applicant name: [APPLICANT NAME]. Application received date: [DATE]. Expected decision timeline: [e.g., "3–5 business days" or a specific date]. Items still needed from the applicant (if any): [LIST, e.g., "proof of income — last two pay stubs" OR "co-signer application" OR write 'none — application is complete']. Primary contact for questions: [NAME, EMAIL, PHONE].
+
+Write an email in this order: (1) Confirm receipt of the application and thank them for applying, (2) State the expected timeline for a decision clearly, (3) If items are missing, list them specifically and give a deadline for submission — if nothing is missing, confirm the application is complete, (4) Provide the contact information for questions. Tone: professional and welcoming, not cold or bureaucratic. Keep it under 150 words. Do not make any implied promises about the outcome.</div>
+
+    <h2>Prompt 2 — Employment Verification Request (to Employer)</h2>
+    <p>Income verification is one of the most important parts of screening, and calling an employer takes time you don't always have. A written verification request — sent by email or fax to the HR department or direct manager — creates a documented record and often gets answered faster than a call. This prompt generates a clean, professional request that asks for the right information without asking for anything the employer isn't obligated to share.</p>
+
+    <span class="time-badge">Saves 15–20 min per income verification</span>
+
+    <span class="prompt-label">Copy this prompt into ChatGPT, Claude, or Gemini</span>
+    <div class="prompt-box">Write a professional employment and income verification request letter for rental screening purposes. Requesting party: [YOUR NAME OR COMPANY NAME]. Employer name: [EMPLOYER OR COMPANY NAME]. Employer contact name (if known): [NAME OR 'not known']. Applicant name: [APPLICANT FULL NAME]. Applicant's stated job title: [JOB TITLE]. Applicant's stated employment start date: [DATE OR 'not provided']. Applicant's stated annual or monthly income: $[AMOUNT]. Response requested by: [DATE, e.g., "within 3 business days"]. Response contact: [YOUR NAME, EMAIL, FAX NUMBER].
+
+Write the letter in this order: (1) Introduction identifying who you are and why you are contacting them — rental screening purposes only, not for any other use, (2) Confirm the following three items only: (a) whether the applicant is currently employed, (b) their job title and employment status (full-time, part-time, contract), (c) whether their stated income is accurate — do not ask for exact salary figures if the employer is uncomfortable providing them, confirming 'within range' is acceptable, (3) Emphasize that all information will be kept confidential and used only for rental screening, (4) Thank them and provide your contact information. Keep the tone professional and non-intrusive. This is a standard screening step, not an investigation.</div>
+
+    <h2>Prompt 3 — Previous Landlord Reference Check</h2>
+    <p>Previous landlord references are the highest-signal part of the screening process — a current landlord may give a generous reference to get a problem tenant to move, while a landlord from two placements ago has no incentive to do anything but tell the truth. This prompt generates a structured reference check inquiry that asks the right questions and documents the answers.</p>
+
+    <span class="time-badge">Saves 15 min per reference check</span>
+
+    <span class="prompt-label">Copy this prompt into ChatGPT, Claude, or Gemini</span>
+    <div class="prompt-box">Write a professional previous landlord reference check inquiry for rental screening. Requesting party: [YOUR NAME OR COMPANY NAME]. Previous landlord or property manager name: [NAME]. Applicant name: [APPLICANT NAME]. Applicant's stated tenancy at this property: [ADDRESS and dates, e.g., "123 Main St, Unit 4B, from March 2023 to February 2025"]. Response contact: [YOUR NAME, EMAIL, PHONE].
+
+Write the inquiry as a concise email or letter that asks the previous landlord to confirm or comment on the following six points only: (1) Whether the applicant did in fact rent the stated unit during the stated period, (2) Whether rent was paid on time consistently, and if not, how frequently late payment occurred, (3) Whether there were any material lease violations during the tenancy, (4) The condition the unit was left in at move-out — specifically whether any deductions were taken from the security deposit and why, (5) Whether any notices to cure, pay-or-quit, or eviction proceedings were initiated, (6) Whether they would rent to this applicant again, with a yes/no or simple explanation.
+
+Clarify that responses are treated confidentially and used only for rental screening. Keep the tone professional and peer-to-peer — one landlord to another — not interrogative. Format as a list of clear questions, not a paragraph block, so the reference can respond point-by-point quickly.</div>
+
+    <h2>Prompt 4 — Application Decision Notification</h2>
+    <p>The decision notification — whether approval or denial — needs to be consistent, professional, and legally sound. An approval letter that implies conditions not in your lease creates problems. A denial letter that cites the wrong reason, or no reason at all in a jurisdiction that requires one, creates liability. This prompt generates the right letter for each case and flags the legal compliance checkpoints you need to verify.</p>
+
+    <span class="time-badge">Saves 15–20 min per decision letter</span>
+
+    <span class="prompt-label">Copy this prompt into ChatGPT, Claude, or Gemini</span>
+    <div class="prompt-box">Write a rental application decision notification letter. Decision: [APPROVED or DENIED]. Property management company or landlord name: [NAME]. Property address: [FULL ADDRESS INCLUDING UNIT NUMBER]. Applicant name: [APPLICANT NAME]. Application submission date: [DATE]. Decision date: [DATE].
+
+IF APPROVED — also provide: Monthly rent: $[AMOUNT]. Lease start date: [DATE]. Lease term: [e.g., "12 months ending [DATE]"]. Security deposit required: $[AMOUNT]. Next step and deadline: [e.g., "Please return a signed lease and security deposit by [DATE]" OR "We will contact you within 2 business days to schedule lease signing"].
+
+IF DENIED — also provide: Primary reason for denial (choose the most accurate): [choose one: "credit history did not meet our minimum requirements" / "income did not meet our minimum requirements" / "rental history — prior eviction or lease violation on record" / "incomplete application — required documentation not received by deadline" / other: describe]. Note: [State whether you are required to provide an Adverse Action Notice under the Fair Credit Reporting Act — if the denial is based on a consumer report (credit check, background check), you MUST provide an FCRA Adverse Action Notice separately. Flag this in your output.]
+
+Write the letter clearly and professionally. For approvals: state the terms clearly and confirm next steps. For denials: state the decision clearly, provide the reason briefly and factually, and include any legally required notices flagged above. For both: do not include any language that could be construed as discriminatory under the Fair Housing Act. Flag any compliance checkpoints I should verify with a real estate attorney or property management association in my jurisdiction before sending.</div>
+
+    <h2>Building a consistent screening process</h2>
+
+    <p>Consistency is the legal protection and the operational advantage in tenant screening. When you apply the same criteria, communicate via the same templates, and document every step, you are protected if a decision is ever questioned — and your applicants have a better experience because they know what to expect and when.</p>
+
+    <ul>
+      <li><strong>Document everything.</strong> Save every communication — acknowledgment, reference check response, verification letter, decision notice — in your property management system against the application. The paper trail matters.</li>
+      <li><strong>Apply criteria before reviewing applications.</strong> Define your screening criteria (income ratio, credit score minimum, prior eviction policy) in writing before any specific applicant is under review. Consistency requires criteria set in advance, not decided case by case.</li>
+      <li><strong>Review all AI-generated letters before sending.</strong> These prompts produce drafts. Verify dollar amounts, dates, and addresses against your actual records. The AI uses exactly what you tell it.</li>
+      <li><strong>Know your state's notice requirements.</strong> Several states have specific adverse action notice requirements beyond the federal FCRA. Check with a local real estate attorney or your state's landlord-tenant statute before using the denial letter template.</li>
+    </ul>
+
+    <div class="cta-box">
+      <h3>40+ AI Prompts for Property Managers and Landlords</h3>
+      <p>Late rent notices, maintenance triage, owner reporting, security deposit letters, lease renewals — the full prompt library covers every recurring workflow in property management.</p>
+      <a class="cta-btn" href="https://szeller.gumroad.com/l/owfbu">Get the Full Guide — $29</a>
+      <div class="cta-note">Instant download · 30-day money-back guarantee</div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>
+    <a href="/">sz.dev</a> &nbsp;·&nbsp;
+    <a href="/#guides">AI Guides</a> &nbsp;·&nbsp;
+    <a href="/#blog">Blog</a>
+  </p>
+  <p style="margin-top:14px">© 2026 · Built for property managers who want to work smarter</p>
+</footer>
+
+</body>
+</html>

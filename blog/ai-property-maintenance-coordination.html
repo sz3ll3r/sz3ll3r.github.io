@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="4 copy-paste AI prompts for property managers to handle maintenance requests, coordinate vendors, update tenants, and get owner approval for unexpected repairs — all without writing from scratch.">
+<title>AI Prompts for Property Managers: Maintenance Coordination and Vendor Communication | sz.dev</title>
+<meta property="og:title" content="4 AI Prompts for Property Maintenance Coordination and Vendor Communication">
+<meta property="og:description" content="Work orders, tenant acknowledgements, repair completion notices, and owner approval requests — as copy-paste prompts for property managers.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sz3ll3r.github.io/blog/ai-property-maintenance-coordination.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-property-maintenance-coordination.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0c0906;--bg2:#120d09;--bg3:#171108;
+  --amber:#f59e0b;--teal:#14b8a6;
+  --sky:#38bdf8;--mint:#34d399;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#2a1f0e;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(12,9,6,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--amber)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--amber)}
+.nav-cta{background:var(--amber);color:#0c0906!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--amber)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--amber);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--amber);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#0a0700;border:1px solid rgba(245,158,11,.2);border-left:3px solid var(--amber);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--amber)}
+.prompt-box{background:#07050a;border:1px solid rgba(245,158,11,.18);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#fcd34d;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--amber);margin-bottom:10px;display:block}
+.time-badge{display:inline-block;background:#0a0700;border:1px solid rgba(20,184,166,.3);color:var(--teal);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:6px;margin:10px 0 22px}
+.cta-box{background:linear-gradient(135deg,#0a0700 0%,#0c0906 100%);border:1px solid rgba(245,158,11,.3);border-radius:14px;padding:36px 32px;margin:60px 0 20px;text-align:center}
+.cta-box h3{color:var(--text);font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:480px;margin:0 auto 24px;font-size:.95rem;line-height:1.7}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,var(--amber),var(--teal));color:#0c0906;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:-.01em;transition:opacity .2s}
+.cta-btn:hover{opacity:.9;text-decoration:none;color:#0c0906}
+.cta-note{font-size:.8rem;color:var(--dim);margin-top:14px}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24px;text-align:center;color:var(--dim);font-size:.85rem;margin-top:80px}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--amber)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .article-wrap{padding:90px 18px 60px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">sz<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="/#guides">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a class="nav-cta" href="https://szeller.gumroad.com/l/owfbu" target="_blank" rel="noopener">Get the Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>&#8250;</span>
+    <a href="/#blog">Blog</a><span>&#8250;</span>
+    <span>Property Maintenance AI</span>
+  </nav>
+
+  <div class="article-cat">Property Management AI</div>
+  <h1>4 AI Prompts for Maintenance Coordination and Vendor Communication</h1>
+  <div class="article-meta">
+    <span>July 31, 2026</span>
+    <span>6 min read</span>
+    <span>Property Managers</span>
+  </div>
+
+  <div class="article-body">
+
+    <p>Maintenance is the part of property management that generates the most communication at the worst possible time. A tenant submits a vague repair request on a Friday afternoon. You need to turn it into a vendor-ready work order, acknowledge the tenant, and potentially get owner approval — all before the issue becomes a habitability problem.</p>
+
+    <p>Each of those steps involves writing, and writing under time pressure is where mistakes happen. Here are four prompts that handle the communication side of maintenance coordination so you can focus on the decisions.</p>
+
+    <div class="callout">
+      <p><strong>No AI experience needed.</strong> Paste each prompt into ChatGPT, Copilot, or Claude. Fill in the brackets with the actual maintenance details. Review every output before sending — these prompts produce a reliable first draft, not a final document.</p>
+    </div>
+
+    <h2>Prompt 1 — Vendor Work Order from Tenant Request</h2>
+
+    <p>Tenant maintenance requests are often incomplete or written in ways that make it hard for a vendor to understand exactly what is needed. This prompt converts a raw tenant message into a structured work order a contractor can act on without calling you back for clarification.</p>
+
+    <div class="time-badge">4 minutes</div>
+
+    <span class="prompt-label">Copy and paste this prompt</span>
+    <div class="prompt-box">Convert this tenant maintenance request into a structured vendor work order. Property address: [ADDRESS]. Unit: [UNIT NUMBER]. Tenant's original message (paste verbatim): "[PASTE TENANT'S EXACT TEXT]". Scheduled access time (if confirmed): [DATE/TIME or "TBD — vendor to coordinate with tenant"]. Tenant contact for access: [PHONE OR EMAIL]. Urgency level: [Emergency — same-day / Urgent — within 48 hours / Routine — schedule within 1–2 weeks]. Produce: (1) Issue summary — rewrite the tenant's complaint in one to three neutral, complete sentences a vendor can understand, using only facts stated by the tenant and not adding assumptions, (2) Scope of work — what the vendor should inspect and/or repair based on the description, (3) Access notes — any specific instructions about entering the unit or property, (4) Clarifying questions — list any information missing from the tenant's message that the vendor would need before proceeding (e.g., is water actively leaking, is there a gas smell, does the appliance work partially or not at all). If any section cannot be completed from the information provided, note what is missing rather than guessing.</div>
+
+    <p>The "do not add assumptions" instruction prevents the model from filling gaps with plausible-sounding details that weren't in the tenant's original message — the most common cause of a vendor showing up with the wrong materials or expecting a job that doesn't match the actual problem.</p>
+
+    <h2>Prompt 2 — Tenant Acknowledgement of Maintenance Request</h2>
+
+    <p>A tenant who hears nothing after submitting a maintenance request assumes it was missed. A brief acknowledgement sets expectations, reduces follow-up calls, and creates a written record that the request was received and logged. This prompt writes it in under a minute.</p>
+
+    <div class="time-badge">2 minutes</div>
+
+    <span class="prompt-label">Copy and paste this prompt</span>
+    <div class="prompt-box">Write a maintenance request acknowledgement to a tenant. Property address: [ADDRESS]. Unit: [UNIT]. Tenant name: [NAME]. Issue reported: [brief description, e.g., "leak under the kitchen sink", "HVAC not cooling", "broken lock on bedroom window"]. Date reported: [DATE]. Next step: [e.g., "A plumber will contact you within 24 hours to arrange access", "We are getting quotes and will update you by [DATE]", "A technician is scheduled for [DATE/TIME]"]. If the issue has any habitability or safety element, acknowledge it specifically: [YES — describe the element | NO]. Contact for updates: [PHONE or EMAIL]. Tone: prompt, professional, reassuring — not bureaucratic. This is a receipt, not a form letter. Do not make commitments about timing or cost that I haven't specified above. Under 120 words. Suitable for email or SMS.</div>
+
+    <p>Keep the timing commitment realistic — the model will faithfully write "within 24 hours" if you tell it to, which becomes a problem if your vendor is a week out. Only confirm what you can actually deliver.</p>
+
+    <h2>Prompt 3 — Repair Completion Notification to Tenant</h2>
+
+    <p>Closing the loop with tenants after a repair is finished builds trust and creates documentation that the issue was resolved. Most managers skip this step because it takes time to write. This prompt makes it fast enough that it actually gets done.</p>
+
+    <div class="time-badge">3 minutes</div>
+
+    <span class="prompt-label">Copy and paste this prompt</span>
+    <div class="prompt-box">Write a repair completion notification to a tenant. Property address: [ADDRESS]. Unit: [UNIT]. Tenant name: [NAME]. Original issue: [brief description of what was reported]. Work completed: [describe exactly what was done, e.g., "replaced the P-trap and supply line under the kitchen sink, no active leak confirmed", "HVAC serviced, refrigerant recharged, cooling restored", "broken window lock replaced with new hardware"]. Date completed: [DATE]. Vendor or technician who performed the work: [NAME/COMPANY or "our maintenance team"]. Any follow-up actions the tenant should take: [e.g., "run the faucet normally and let us know if any dripping returns", "the new thermostat settings are explained in the enclosed sheet", "none required"]. Any follow-up actions we will take: [e.g., "a second inspection is scheduled in 30 days to confirm the repair is holding" or "none planned unless the issue recurs"]. Tone: matter-of-fact and professional. Do not use phrases like "we apologise for the inconvenience" unless I specifically ask — keep it practical and forward-looking. Under 150 words.</div>
+
+    <p>The "do not apologise unless I specifically ask" instruction prevents the model from generating liability-adjacent language. If the repair took longer than expected and you do want to acknowledge that, add a specific note in the tenant-follow-up slot — do not let the model decide when an apology is appropriate.</p>
+
+    <h2>Prompt 4 — Owner Approval Request for Unexpected Repair Cost</h2>
+
+    <p>When a maintenance issue turns out to be more expensive than expected, or a routine repair reveals a bigger underlying problem, you need owner sign-off before proceeding. This prompt writes a concise approval request that gives the owner the facts they need to decide — without the back-and-forth of a phone call that interrupts both schedules.</p>
+
+    <div class="time-badge">4 minutes</div>
+
+    <span class="prompt-label">Copy and paste this prompt</span>
+    <div class="prompt-box">Write an owner approval request for an unexpected property repair. Property address: [ADDRESS]. Owner name: [NAME]. Original maintenance issue reported: [brief description]. What the inspection revealed: [describe the actual problem found — e.g., "the plumber found the supply line leak has caused water damage inside the wall cavity, requiring drywall removal and repair in addition to the original pipe fix"]. Vendor quote received: [COMPANY NAME] quoted $[AMOUNT] for [description of quoted scope]. Alternative option (if any): [e.g., "a temporary patch is available for $[LOWER AMOUNT] but will need replacement within 6–12 months" or "no alternative — the repair must proceed to meet habitability standards"]. Recommended action: [your recommendation — proceed with full repair / proceed with temporary fix / get a second quote / other]. Timing consideration: [e.g., "tenant has no hot water and this must be resolved within 48 hours under state habitability law" or "not urgent — can wait for your direction"]. Write this as a short, professional email to the owner — state the situation, the options, and what you recommend, and end with a clear request for their decision. Do not add costs or quotes I have not provided. Under 200 words.</div>
+
+    <p>The timing consideration slot is the most important field. If there is a habitability requirement with a legal deadline, say so plainly — that gives the owner context for why this needs a quick response and protects you if they delay. Do not invent urgency that doesn't exist, but do not omit it if it does.</p>
+
+    <h2>Maintenance Communication Is Where Liability Lives</h2>
+
+    <p>Every prompt above produces a paper trail. When a tenant later claims they reported an issue that was ignored, or an owner disputes a repair that was authorised, the documented chain of messages — request received, acknowledged, work ordered, completed, owner approved — is what protects you.</p>
+
+    <p>These prompts make it fast enough to actually create that trail consistently, not just on the high-stakes calls where you know to be careful.</p>
+
+    <p>The full guide covers 35 prompts across the core property management workflows: delinquency notices, owner reports, lease renewals, tenant screening communications, move-out documentation, and more.</p>
+
+  </div>
+
+  <div class="cta-box">
+    <h3>35 Prompts for Every Communication a Property Manager Sends</h3>
+    <p>Late rent notices, maintenance coordination, owner reporting, lease renewals, tenant screening, move-out documentation — all as copy-paste prompts organised by workflow.</p>
+    <a class="cta-btn" href="https://szeller.gumroad.com/l/owfbu" target="_blank" rel="noopener">Get the Full Guide — $29</a>
+    <p class="cta-note">Instant download. 30-day money-back guarantee.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p><a href="/">sz.dev</a> &nbsp;·&nbsp; <a href="/#guides">Guides</a> &nbsp;·&nbsp; <a href="/#blog">Blog</a> &nbsp;·&nbsp; <a href="https://szeller.gumroad.com" target="_blank" rel="noopener">Shop</a></p>
+  <p style="margin-top:12px">AI workflow guides for professionals. Questions: <a href="mailto:szeller@blackberg.com">szeller@blackberg.com</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="5 AI prompts for solo CPAs and bookkeepers to handle tax season client communications — extension notices, document request emails, IRS notice explanations, and deadline reminders — without rewriting from scratch each time.">
+<title>5 AI Prompts for Solo CPAs and Bookkeepers: Tax Season Client Communication | sz.dev</title>
+<meta property="og:title" content="5 AI Prompts for Solo CPAs and Bookkeeping Practices: Tax Season Client Communication">
+<meta property="og:description" content="Tax season client emails take longer than the tax work. These 5 prompts give solo CPAs and bookkeepers a consistent, professional starting point for the communications that eat time every filing season.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sz3ll3r.github.io/blog/ai-solo-cpa-bookkeeper-tax-season.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-solo-cpa-bookkeeper-tax-season.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#061210;--bg2:#091a16;--bg3:#0c201c;
+  --emerald:#10b981;--cyan:#22d3ee;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1a2e28;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(6,18,16,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--emerald)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--emerald)}
+.nav-cta{background:var(--emerald);color:#061210!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--emerald)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--emerald);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--emerald);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#040e0c;border:1px solid rgba(16,185,129,.2);border-left:3px solid var(--emerald);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--emerald)}
+.prompt-box{background:#040e0a;border:1px solid rgba(16,185,129,.18);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#6ee7b7;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--emerald);margin-bottom:10px;display:block}
+.time-badge{display:inline-block;background:#040e0c;border:1px solid rgba(34,211,238,.3);color:var(--cyan);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:6px;margin:10px 0 22px}
+.cta-box{background:linear-gradient(135deg,#040e0c 0%,#061210 100%);border:1px solid rgba(16,185,129,.3);border-radius:14px;padding:36px 32px;margin:60px 0 20px;text-align:center}
+.cta-box h3{color:var(--text);font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:480px;margin:0 auto 24px;font-size:.95rem;line-height:1.7}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,var(--emerald),var(--cyan));color:#061210;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:-.01em;transition:opacity .2s}
+.cta-btn:hover{opacity:.9;text-decoration:none;color:#061210}
+.cta-note{font-size:.8rem;color:var(--dim);margin-top:14px}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24px;text-align:center;color:var(--dim);font-size:.85rem;margin-top:80px}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--emerald)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .article-wrap{padding:90px 18px 60px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">sz<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="/#guides">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a class="nav-cta" href="https://szeller.gumroad.com/l/aiaccountants" target="_blank" rel="noopener">Get the Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>&#8250;</span>
+    <a href="/#blog">Blog</a><span>&#8250;</span>
+    <span>Solo CPA &amp; Bookkeeper AI</span>
+  </nav>
+
+  <div class="article-cat">Solo CPA &amp; Bookkeeper AI</div>
+  <h1>5 AI Prompts for Solo CPAs and Bookkeepers: Tax Season Client Communication That Doesn't Take All Day</h1>
+  <div class="article-meta">
+    <span>August 2, 2026</span>
+    <span>7 min read</span>
+    <span>Solo CPAs, Enrolled Agents &amp; Bookkeeping Practices</span>
+  </div>
+
+  <div class="article-body">
+
+    <p>Tax season moves faster than the emails that support it. For a solo CPA or small bookkeeping practice, the communications overhead — extension notices, missing-document chasers, IRS letter explanations, deadline reminders — can consume an hour of every client's peak-season day.</p>
+
+    <p>These five prompts cover the client communications that come up every filing season and take far longer to write than they should. They work in ChatGPT, Copilot, or any AI assistant — fill the brackets, review before sending, and move on to the actual tax work.</p>
+
+    <div class="callout">
+      <p><strong>Who these are for:</strong> Solo CPAs, enrolled agents, and bookkeeping practices where client communication is handled by the owner — not a large firm with a client service team. The prompts are calibrated for direct practitioner-to-client writing, not corporate communications departments.</p>
+    </div>
+
+    <h2>Prompt 1: Extension Filing Notification</h2>
+
+    <p>Extension season generates more "did something go wrong?" calls than any other communication moment in tax practice. Most extension notices inadvertently open with language that sounds like an explanation or an apology — which reads as alarm to clients who didn't ask for one. This prompt produces a notice that is calm, clear, and reassuring from the first sentence.</p>
+
+    <span class="time-badge">Prevents 70% of "is everything OK?" follow-up calls</span>
+
+    <div class="prompt-box"><span class="prompt-label">Prompt — Copy and paste into ChatGPT, Copilot, or Gemini</span>Write a professional email to a tax client notifying them that we are filing a federal extension on their behalf. Requirements:
+- Open calmly — the client should not interpret this as bad news or a problem with their return
+- Explain in plain English that an extension gives us more time to prepare the return, not more time to pay if taxes are owed
+- If a payment may be due by the original deadline, address estimated payments clearly and simply
+- State the new filing deadline (after extension)
+- Provide a contact number or email for questions
+- Keep it under 200 words
+- Do NOT use legalese, jargon, or phrases like "pursuant to" or "as per our records"
+
+Client first name: [NAME]
+Return type: [1040 Individual / S-Corp 1120-S / Partnership 1065 / Other]
+Original filing deadline: [DATE — e.g., April 15]
+Extended filing deadline: [DATE — e.g., October 15]
+Payment status: [No additional tax expected / Estimated payment required: $X / Still calculating]
+Include reason for extension: [Yes — one brief sentence / No — omit entirely]
+Contact: [PHONE or EMAIL]
+Your name: [NAME]</div>
+
+    <p>The 200-word cap is not arbitrary — it prevents the over-explanation that sounds defensive. The clients who misread an extension as a problem aren't going to be reassured by more paragraphs. Calm and short converts better.</p>
+
+    <h2>Prompt 2: Missing Documents Chaser</h2>
+
+    <p>Document chasing is one of the highest-volume recurring tasks in any tax practice. This prompt produces a polite, specific request that tells the client exactly what's missing and why — which dramatically reduces the back-and-forth compared to a vague "we still need a few things from you" message.</p>
+
+    <span class="time-badge">Reduces document follow-up rounds from 3 to 1</span>
+
+    <div class="prompt-box"><span class="prompt-label">Prompt — Copy and paste into ChatGPT, Copilot, or Gemini</span>Write a professional email to a tax client requesting specific missing documents needed to complete their return. Requirements:
+- Warm but clear — this is a friendly reminder, not a demand
+- List each missing document specifically (not vague categories)
+- Briefly explain WHY each document is needed, in plain English, if it's not obvious
+- Give a clear deadline for submission and note what happens if it's missed (we may need to extend, or the return could be filed incomplete)
+- Make it easy to respond — note the preferred method for submitting documents (portal upload, email attachment, drop-off)
+- Keep it under 200 words
+- Professional, direct tone — not apologetic but not demanding
+
+Client first name: [NAME]
+Missing documents (list each): [ITEM 1 — e.g., "1099-B brokerage statement for the sale of XYZ stock"], [ITEM 2], [ITEM 3 — add as many as needed]
+Reason needed (optional — add if not obvious): [REASON for ITEM 1 if helpful], [REASON for ITEM 2 if helpful]
+Document submission deadline: [DATE]
+Preferred submission method: [e.g., "upload to your client portal at [link]," "email attachment to [address]"]
+Your name: [NAME]</div>
+
+    <p>Specifying why each document is needed, even briefly, is what turns a list of requests into a communication that clients actually act on. "We need your 1099-B" gets a quicker and more accurate response than "we still need brokerage documents" — because the client knows exactly which one you mean.</p>
+
+    <h2>Prompt 3: IRS Notice Explanation to Client</h2>
+
+    <p>When a client receives an IRS notice and forwards it with "??? is this bad ???" in the subject line, the professional response needs to be calm, specific, and jargon-free. This prompt produces an explanation that addresses what the notice actually says, what it means, and what (if anything) the client needs to do — without triggering unnecessary panic.</p>
+
+    <span class="time-badge">Converts a panic email into a resolved situation</span>
+
+    <div class="prompt-box"><span class="prompt-label">Prompt — Copy and paste into ChatGPT, Copilot, or Gemini</span>Write a professional email from a CPA or accountant to a tax client explaining a specific IRS notice they received. Requirements:
+- Open by reassuring the client that receiving this type of notice is common and does not mean they are being audited (if true — adjust if it IS a serious notice)
+- Explain in plain English what the IRS notice is requesting or informing them of
+- Note clearly whether any action is required from the client, and if so, what
+- Explain what action your firm is taking or will take
+- Give a rough timeframe for resolution
+- Keep jargon-free — no IRS code citations, no bureaucratic language
+- Under 250 words, reassuring but accurate
+
+Client first name: [NAME]
+IRS notice type (if known): [e.g., "CP2000 — proposed changes notice," "CP14 — balance due notice," "Letter 525 — general audit letter," or describe in plain terms what it says]
+Is this serious? [Yes — explain why / No — routine notice / Undetermined until we review]
+Action required from client: [None / Yes: DESCRIBE WHAT CLIENT NEEDS TO DO]
+What your firm will do: [e.g., "We will respond to the IRS on your behalf," "We will review the proposed changes and advise"]
+Estimated timeframe: [e.g., "We expect this to be resolved within 4–6 weeks," or "We will have a response ready by DATE"]
+Your name: [NAME]</div>
+
+    <h2>Prompt 4: Year-End Deadline Reminder</h2>
+
+    <p>Sending a proactive year-end reminder to clients before December 31 — about estimated tax payments, contribution deadlines, and year-end planning opportunities — is one of the highest-value communication touches in solo practice. Most practitioners intend to send this and don't, because writing it from scratch feels like an article, not an email. This prompt keeps it to the right length.</p>
+
+    <span class="time-badge">Reminds clients of deadlines before they miss them</span>
+
+    <div class="prompt-box"><span class="prompt-label">Prompt — Copy and paste into ChatGPT, Copilot, or Gemini</span>Write a year-end tax planning reminder email from a CPA or accountant to a tax client. Requirements:
+- Brief and practical — this is a checklist reminder, not a newsletter
+- Remind the client of the December 31 deadline for contributions and estimated payments
+- Note any specific items relevant to this client's situation
+- Invite them to schedule a call if they have questions or want to plan before year-end
+- Warm but efficient tone — this client likely receives multiple year-end communications from advisors
+- Under 200 words
+- Do NOT include specific tax advice — this is a reminder, not a planning memo
+
+Client first name: [NAME]
+Return type (if relevant to timing): [1040 Individual / Business / Both]
+Specific year-end items to highlight: [e.g., "Q4 estimated tax payment due January 15," "IRA contribution (can be made until tax deadline)," "review year-end charitable contributions"]
+Call scheduling link or contact: [LINK or PHONE]
+Your name: [NAME]</div>
+
+    <h2>Prompt 5: Tax Return Ready for Review Notification</h2>
+
+    <p>The "your return is ready" message seems simple, but it's one of the most important client touchpoints in the filing cycle. A well-written notification tells the client exactly what to review, how to provide approval, and what the next step is — which cuts the approval round-trip from days to hours.</p>
+
+    <span class="time-badge">Cuts approval turn-around time significantly</span>
+
+    <div class="prompt-box"><span class="prompt-label">Prompt — Copy and paste into ChatGPT, Copilot, or Gemini</span>Write a professional email notifying a tax client that their return is complete and ready for their review and approval. Requirements:
+- Clear and action-oriented opening — the client should immediately understand that something is ready and requires their attention
+- Briefly explain what they're being asked to review and approve
+- Note the method for reviewing (client portal link, attached PDF, both)
+- Include a clear approval action (sign the e-file authorisation, reply to confirm, etc.)
+- Note the filing deadline and request a response by a specific date
+- Keep it under 200 words
+
+Client first name: [NAME]
+Return type: [1040 Individual / S-Corp / Partnership / Other]
+Tax year: [YEAR]
+Review method: [e.g., "log in to your client portal at [link]," "see the attached PDF"]
+Approval action: [e.g., "sign and return the attached 8879 e-file authorisation," "approve via the portal," "reply confirming your approval by email"]
+Response deadline: [DATE]
+Filing deadline: [DATE]
+Balance due or refund amount (optional — include if helpful): [$X due / $X refund expected]
+Your name: [NAME]</div>
+
+    <p>Including the balance due or refund amount in this message, if you choose to mention it, gets the client's attention more reliably than any other element. It is optional — some practitioners prefer to discuss it by phone before the return lands in a client's inbox — but when included, it dramatically increases the speed of the approval response.</p>
+
+    <h2>Consistent Communication Is a Competitive Advantage</h2>
+
+    <p>Clients who feel informed and well-managed during tax season refer other clients. Clients who feel ignored — even when the underlying work is excellent — don't. For a solo CPA or bookkeeping practice, consistent professional communication isn't an overhead cost: it's the thing that determines whether your client base grows or churns.</p>
+
+    <p>These prompts get you to a professional first draft in under two minutes. The client-specific edits take another two. That's four minutes for a communication that used to cost fifteen.</p>
+
+    <div class="cta-box">
+      <h3>35 More Prompts Built for Solo CPAs and Bookkeeping Practices</h3>
+      <p>The full guide covers engagement letter scope-of-services sections, monthly reporting narratives, bookkeeping cleanup client emails, scope-expansion conversations, billing dispute responses, and offboarding letters — written for the workflow of a solo practitioner or small practice, not a corporate accounting department.</p>
+      <a class="cta-btn" href="https://szeller.gumroad.com/l/aiaccountants" target="_blank" rel="noopener">Get the Full Prompt Set — $29</a>
+      <p class="cta-note">30-day money-back guarantee. PDF. No subscription.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 sz.dev &mdash; <a href="/privacy.html">Privacy</a></p>
+</footer>
+
+</body>
+</html>

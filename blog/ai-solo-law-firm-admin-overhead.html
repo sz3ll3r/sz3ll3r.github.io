@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="5 AI prompts for solo practitioners and small law firms to cut admin overhead — client status updates, billing narratives, appointment reminders, file closure letters, and referral acknowledgements — without a paralegal.">
+<title>5 AI Prompts for Solo Law Firms: Cutting Admin Overhead Without Adding Staff | sz.dev</title>
+<meta property="og:title" content="5 AI Prompts for Solo Law Firms: Cutting Admin Overhead Without Adding Staff">
+<meta property="og:description" content="Solo practitioners and small firm attorneys lose billable hours to admin every day. These 5 prompts handle the recurring write-ups that eat time — client updates, billing narratives, file closures, and more.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sz3ll3r.github.io/blog/ai-solo-law-firm-admin-overhead.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sz3ll3r.github.io/blog/ai-solo-law-firm-admin-overhead.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0c10;--bg2:#0e1016;--bg3:#121418;
+  --gold:#d4af37;--steel:#64748b;
+  --text:#f1f5f9;--muted:#94a3b8;--dim:#475569;
+  --border:#1e2128;
+  --max:720px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,12,16,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:#0a0c10!important;padding:7px 18px;border-radius:8px;font-weight:600!important;font-size:.85rem!important}
+.article-wrap{max-width:var(--max);margin:0 auto;padding:100px 24px 80px}
+.breadcrumb{font-size:.8rem;color:var(--dim);margin-bottom:28px}
+.breadcrumb a{color:var(--dim);text-decoration:none}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb span{margin:0 8px}
+.article-cat{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:12px}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.article-meta{font-size:.85rem;color:var(--dim);margin-bottom:40px;display:flex;gap:20px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:6px}
+.article-body{font-size:1rem;line-height:1.8;color:#cbd5e1}
+.article-body p{margin-bottom:20px}
+.article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:40px 0 14px;letter-spacing:-.01em}
+.article-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:28px 0 10px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;color:#94a3b8}
+.article-body strong{color:var(--text)}
+.article-body a{color:var(--gold);text-decoration:none}
+.article-body a:hover{text-decoration:underline}
+.callout{background:#0e0e08;border:1px solid rgba(212,175,55,.2);border-left:3px solid var(--gold);border-radius:8px;padding:18px 22px;margin:28px 0}
+.callout p{margin:0;font-size:.95rem;color:#94a3b8}
+.callout strong{color:var(--gold)}
+.prompt-box{background:#080808;border:1px solid rgba(212,175,55,.18);border-radius:10px;padding:22px;margin:24px 0;font-family:'Courier New',Courier,monospace;font-size:.875rem;color:#fde68a;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.prompt-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:10px;display:block}
+.time-badge{display:inline-block;background:#0d0d0d;border:1px solid rgba(100,116,139,.3);color:var(--steel);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:6px;margin:10px 0 22px}
+.cta-box{background:linear-gradient(135deg,#0e0e08 0%,#0a0c10 100%);border:1px solid rgba(212,175,55,.3);border-radius:14px;padding:36px 32px;margin:60px 0 20px;text-align:center}
+.cta-box h3{color:var(--text);font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.cta-box p{color:var(--muted);max-width:480px;margin:0 auto 24px;font-size:.95rem;line-height:1.7}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--steel));color:#0a0c10;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:-.01em;transition:opacity .2s}
+.cta-btn:hover{opacity:.9;text-decoration:none;color:#0a0c10}
+.cta-note{font-size:.8rem;color:var(--dim);margin-top:14px}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24px;text-align:center;color:var(--dim);font-size:.85rem;margin-top:80px}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--gold)}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .article-wrap{padding:90px 18px 60px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">sz<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="/#guides">Guides</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a class="nav-cta" href="https://szeller.gumroad.com/l/ailawyers" target="_blank" rel="noopener">Get the Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>&#8250;</span>
+    <a href="/#blog">Blog</a><span>&#8250;</span>
+    <span>Solo Law Firm AI</span>
+  </nav>
+
+  <div class="article-cat">Solo Law Firm AI</div>
+  <h1>5 AI Prompts for Solo Practitioners and Small Firms: Cutting Admin Overhead Without Adding Staff</h1>
+  <div class="article-meta">
+    <span>August 2, 2026</span>
+    <span>7 min read</span>
+    <span>Solo Practitioners &amp; Small Firm Attorneys</span>
+  </div>
+
+  <div class="article-body">
+
+    <p>Running a solo practice or small firm means billing a client in the morning and writing their status update in the afternoon yourself. There is no paralegal to handle the recurring correspondence, no assistant drafting the billing narrative, no one else writing the file closure letter.</p>
+
+    <p>Admin overhead is what keeps solo practitioners and small-firm attorneys from scaling. These five prompts address the communications that eat the most time each week — not the high-stakes drafting you review line by line, but the routine correspondence that still needs to be professional and consistent every time it goes out.</p>
+
+    <div class="callout">
+      <p><strong>UPL / ethics note:</strong> These prompts produce drafts for attorney review — not final documents. Every output gets reviewed and edited before it goes to a client or any third party. These are drafting shortcuts, not substitutes for attorney judgment.</p>
+    </div>
+
+    <h2>Prompt 1: Client Status Update Email (Routine — No New Development)</h2>
+
+    <p>The most complained-about gap in solo practice client communication isn't the difficult conversation — it's the routine "nothing new to report" update that clients still need to feel informed. Writing one from scratch every time costs five minutes you don't bill; skipping it costs you a client relationship. This prompt closes the gap.</p>
+
+    <span class="time-badge">Saves 5–8 min per routine update</span>
+
+    <div class="prompt-box"><span class="prompt-label">Prompt — Copy and paste into ChatGPT, Copilot, or Gemini</span>Write a routine client status update email for an attorney to send when there is no new material development to report. Requirements:
+- Warm but professional tone — the client should feel informed, not ignored
+- Do NOT promise a specific timeline or outcome
+- Do NOT say anything that could be read as legal advice about what the client should do next
+- Acknowledge where the matter currently stands (waiting on a court date, awaiting the other party's response, in document review, etc.)
+- Include one clear next step or upcoming milestone if there is one
+- End with an invitation to reach out with questions
+- Keep it under 150 words
+
+Client first name: [NAME]
+Matter type (general only): [e.g., contract dispute, estate planning, family law]
+Current status: [e.g., "waiting on the court to schedule a hearing," "awaiting opposing counsel's response to our correspondence"]
+Next milestone (if known): [e.g., "we expect a hearing to be scheduled within the next 4–6 weeks," or "none confirmed yet"]
+Attorney name: [NAME]</div>
+
+    <p>The instruction "do NOT say anything that could be read as legal advice about what the client should do next" is the critical guardrail. Without it, early drafts slip into advice-flavoured language — "you may want to consider..." — which is inappropriate in a status update and creates an implied obligation you didn't intend.</p>
+
+    <h2>Prompt 2: Billing Narrative for Time Entries</h2>
+
+    <p>Billing narratives are one of the highest-friction recurring tasks in solo practice. Client-facing time descriptions need to be specific enough to justify the entry, neutral enough to avoid creating evidence problems, and brief enough that the client actually reads the bill. Getting that balance right from scratch on 20 entries a week is exhausting.</p>
+
+    <span class="time-badge">Saves 3–5 min per billing entry</span>
+
+    <div class="prompt-box"><span class="prompt-label">Prompt — Copy and paste into ChatGPT, Copilot, or Gemini</span>Write a professional billing narrative for an attorney's time entry. Requirements:
+- Describe the legal task in plain English that a non-lawyer client can understand
+- Be specific about what was done — do NOT use vague language like "legal work" or "research"
+- Do NOT include specific case strategy, legal theories, or anything that could be read as admitting a weakness in the matter
+- Do NOT reference internal communications or work product descriptions that are not client-facing
+- Keep it to 1–2 sentences, under 50 words
+- Professional tone — consistent with what appears on a legal invoice
+
+Work performed: [BRIEF DESCRIPTION — e.g., "reviewed the opposing party's discovery responses, identified objections to three production requests, drafted responses"]
+Attorney initials/name: [NAME]
+Date: [DATE]
+Time units: [e.g., 0.5 hours]</div>
+
+    <p>The most common mistake in billing narratives is describing internal deliberation rather than the task performed. Clients read "strategy discussion re: case direction" and wonder what they paid for. This prompt consistently produces entries that describe a specific, visible task.</p>
+
+    <h2>Prompt 3: File Closure Letter</h2>
+
+    <p>A file closure letter does more than close a file. It confirms what was accomplished, reminds the client of any ongoing obligations, and — critically — clearly states that the representation has ended and that you are no longer their attorney for this matter. That final point protects you from future claims that the attorney-client relationship is ongoing.</p>
+
+    <span class="time-badge">Completes the representation record cleanly</span>
+
+    <div class="prompt-box"><span class="prompt-label">Prompt — Copy and paste into ChatGPT, Copilot, or Gemini</span>Write a file closure letter for an attorney to send at the conclusion of a legal matter. Requirements:
+- Summarise what was accomplished in the representation (in neutral, factual terms)
+- Note any ongoing obligations the client has (e.g., compliance deadlines, future payments, documents they need to retain)
+- Clearly and explicitly state that the representation on this matter is concluded and that you are no longer providing legal services for this specific matter
+- Provide a brief statement about file retention (how long you'll keep the file and what to do if they need a copy later)
+- Offer to assist with future matters
+- Professional but warm — close the relationship on a positive note
+- Under 300 words
+
+Client name: [NAME]
+Matter description: [e.g., "the purchase of the commercial property at [address]," "your immigration visa application"]
+Outcome summary: [e.g., "the transaction completed on [date]," "your visa application was approved and issued"]
+Ongoing client obligations (if any): [e.g., "retain copies of the signed closing documents," "ensure continued compliance with the visa conditions"]
+File retention period at your firm: [e.g., "7 years"]
+Attorney name / firm: [NAME / FIRM]</div>
+
+    <h2>Prompt 4: Referral Thank-You and Matter Acknowledgement</h2>
+
+    <p>Referrals from other attorneys or existing clients are the lifeblood of a solo practice. A prompt, professional thank-you message confirms the referral was received and sets expectations about next steps — and it takes two minutes instead of fifteen. The relationship maintenance value alone is worth standardising this.</p>
+
+    <span class="time-badge">Turns referrals into recurring referral relationships</span>
+
+    <div class="prompt-box"><span class="prompt-label">Prompt — Copy and paste into ChatGPT, Copilot, or Gemini</span>Write a professional thank-you message to acknowledge a referral received by a solo attorney or small law firm. Requirements:
+- Thank the referring person by name, warmly but briefly
+- Confirm that you've received the referral and are in contact with (or will contact) the prospective client
+- Do NOT disclose any details about the referred person's matter — keep it neutral
+- Express appreciation for the professional relationship
+- Leave the door open for future referrals naturally (without directly soliciting them)
+- Under 150 words, suitable for sending as an email or a short note
+
+Referring person's name: [NAME]
+Referring person's relationship: [e.g., "colleague," "former client," "opposing counsel we've worked with"]
+Attorney name: [NAME]
+Firm name (optional): [FIRM or leave blank]</div>
+
+    <p>The instruction not to disclose matter details applies even in a thank-you message. A referral thank-you that says "I've received your referral of the Smith family regarding their estate dispute" is fine in isolation — until the Smiths didn't tell their referrer anything specific and your thank-you reveals more than they shared. Keeping the acknowledgement content-neutral avoids that entirely.</p>
+
+    <h2>Prompt 5: Appointment Reschedule Confirmation</h2>
+
+    <p>When a client or opposing counsel reschedules a consultation or meeting, a brief written confirmation of the new date protects you and creates a clear record. This is a 90-second task that solo practitioners often skip — and then spend 20 minutes reconstructing what was agreed when there's a scheduling dispute.</p>
+
+    <span class="time-badge">Creates the paper trail that prevents disputes</span>
+
+    <div class="prompt-box"><span class="prompt-label">Prompt — Copy and paste into ChatGPT, Copilot, or Gemini</span>Write a brief appointment reschedule confirmation for an attorney. Requirements:
+- Confirm the new date, time, and format (in-person / phone / video)
+- Briefly acknowledge that the original appointment was rescheduled
+- Note the meeting location or call-in details if applicable
+- Invite them to reach out if they need to change again
+- Keep it under 100 words — this is a confirmation, not a correspondence letter
+
+Recipient name: [NAME]
+Original appointment date/time: [DATE / TIME]
+New appointment date/time: [DATE / TIME]
+Format: [In-person / Phone / Video call]
+Location or call details: [ADDRESS or "I will send a calendar invite with a video link"]
+Attorney name: [NAME]</div>
+
+    <h2>What These Prompts Are and Are Not</h2>
+
+    <p>These prompts produce first drafts for attorney review. None of them go out without being read, and several — particularly the billing narratives and file closure letters — will require specific edits that only you have the context to make.</p>
+
+    <p>What they eliminate is the blank-page problem. The fifteen minutes it takes to write a routine client update from scratch when you're already behind on billable work, at the end of the day, when the last thing you want to do is stare at an empty email draft. That is where these prompts pay for themselves.</p>
+
+    <div class="cta-box">
+      <h3>35 More Prompts Built for Solo Practitioners and Small Firms</h3>
+      <p>The full guide covers demand letters, engagement letter clauses, discovery response summaries, settlement communication drafts, flat-fee client management emails, and court filing cover letters — all calibrated for the workflow of a solo or small-firm attorney, not a large-firm environment with paralegal support.</p>
+      <a class="cta-btn" href="https://szeller.gumroad.com/l/ailawyers" target="_blank" rel="noopener">Get the Full Prompt Set — $29</a>
+      <p class="cta-note">30-day money-back guarantee. PDF. No subscription.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 sz.dev &mdash; <a href="/privacy.html">Privacy</a></p>
+</footer>
+
+</body>
+</html>
